@@ -10,6 +10,7 @@
 		91428F4D1F4BC5100023561F /* ReplicatorLayerVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 91428F4B1F4BC5100023561F /* ReplicatorLayerVC.m */; };
 		91428F4E1F4BC5100023561F /* ReplicatorLayerVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 91428F4C1F4BC5100023561F /* ReplicatorLayerVC.xib */; };
 		91428F521F4C3DC10023561F /* ScrollLayerVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 91428F511F4C3DC10023561F /* ScrollLayerVC.m */; };
+		919BE024211E7DE600F42A0A /* CompleteViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 919BE023211E7DE600F42A0A /* CompleteViewController.m */; };
 		91A703BF1F4C6A8800BD06AF /* ShapeLayerVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 91A703BE1F4C6A8800BD06AF /* ShapeLayerVC.m */; };
 		91A703C21F4D238500BD06AF /* DownView.m in Sources */ = {isa = PBXBuildFile; fileRef = 91A703C11F4D238500BD06AF /* DownView.m */; };
 		91A703C61F4D46B200BD06AF /* TextLayerVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 91A703C51F4D46B200BD06AF /* TextLayerVC.m */; };
@@ -37,6 +38,8 @@
 		91428F4C1F4BC5100023561F /* ReplicatorLayerVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ReplicatorLayerVC.xib; sourceTree = "<group>"; };
 		91428F501F4C3DC10023561F /* ScrollLayerVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ScrollLayerVC.h; sourceTree = "<group>"; };
 		91428F511F4C3DC10023561F /* ScrollLayerVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ScrollLayerVC.m; sourceTree = "<group>"; };
+		919BE022211E7DE600F42A0A /* CompleteViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CompleteViewController.h; sourceTree = "<group>"; };
+		919BE023211E7DE600F42A0A /* CompleteViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CompleteViewController.m; sourceTree = "<group>"; };
 		91A703BD1F4C6A8800BD06AF /* ShapeLayerVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ShapeLayerVC.h; sourceTree = "<group>"; };
 		91A703BE1F4C6A8800BD06AF /* ShapeLayerVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ShapeLayerVC.m; sourceTree = "<group>"; };
 		91A703C01F4D238500BD06AF /* DownView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DownView.h; sourceTree = "<group>"; };
@@ -101,6 +104,15 @@
 				91428F511F4C3DC10023561F /* ScrollLayerVC.m */,
 			);
 			path = ScrollLayer;
+			sourceTree = "<group>";
+		};
+		919BE021211E7DE600F42A0A /* Complete */ = {
+			isa = PBXGroup;
+			children = (
+				919BE022211E7DE600F42A0A /* CompleteViewController.h */,
+				919BE023211E7DE600F42A0A /* CompleteViewController.m */,
+			);
+			path = Complete;
 			sourceTree = "<group>";
 		};
 		91A703BC1F4C6A7400BD06AF /* ShapeLayer */ = {
@@ -186,6 +198,7 @@
 		91C938881F4AB39300E9B295 /* Animations */ = {
 			isa = PBXGroup;
 			children = (
+				919BE021211E7DE600F42A0A /* Complete */,
 				91A703CB1F4D6EE600BD06AF /* TransformLayer */,
 				91A703C71F4D50CA00BD06AF /* TiledLayer */,
 				91A703C31F4D469400BD06AF /* TextLayer */,
@@ -334,6 +347,7 @@
 				91A703BF1F4C6A8800BD06AF /* ShapeLayerVC.m in Sources */,
 				91C938791F4AB31600E9B295 /* ViewController.m in Sources */,
 				91C938901F4ABBC600E9B295 /* BaseViewController.m in Sources */,
+				919BE024211E7DE600F42A0A /* CompleteViewController.m in Sources */,
 				91C9388D1F4ABA0B00E9B295 /* TransitionVC.m in Sources */,
 				91F753D21F4B151200D1CA08 /* EmitterLayerVC.m in Sources */,
 				91428F521F4C3DC10023561F /* ScrollLayerVC.m in Sources */,
