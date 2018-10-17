@@ -18,13 +18,29 @@ class ArcView: UIView {
         return true
     }()
 
-    /*
+    
     // Only override draw() if you perform custom drawing.
     // An empty implementation adversely affects performance during animation.
     override func draw(_ rect: CGRect) {
         // Drawing code
+        //像CG一样绘图
+        
+        UIColor.red.setStroke()
+        UIColor.brown.setFill()
+        let cgRect = CGRect(x: 10, y: 10, width: 300, height: 200)
+        let bezier = UIBezierPath()
+        bezier.lineWidth = 5
+        bezier.lineCapStyle = .round
+        bezier.lineJoinStyle = .round
+        
+        bezier.move(to: cgRect.origin)
+        bezier.addLine(to: CGPoint(x: 100, y: 100))
+        bezier.addLine(to: CGPoint(x: 50, y: 100))
+        bezier.close()
+        bezier.fill()
+        bezier.stroke()
     }
-    */
+    
     
     override func layoutSubviews() {
         super.layoutSubviews()
@@ -32,6 +48,7 @@ class ArcView: UIView {
     }
     
     func drawCircularArc() {
+        //镂空效果
         //第一种方式，0层路径描绘
         let path =  UIBezierPath()//UIBezierPath(rect: self.bounds)
         path.lineCapStyle = .round
@@ -70,6 +87,7 @@ class ArcView: UIView {
         shape.frame = self.bounds
         
         self.layer.mask = shape
+        
     }
 
 }
