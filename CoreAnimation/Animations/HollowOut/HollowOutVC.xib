@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="HollowOutVC" customModule="CoreAnimation" customModuleProvider="target">
+            <connections>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="pic0" translatesAutoresizingMaskIntoConstraints="NO" id="Hzf-GO-CRd">
+                    <rect key="frame" x="0.0" y="367" width="375" height="300"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="300" id="dfI-e3-Fg7"/>
+                    </constraints>
+                </imageView>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zqI-rc-eNE" customClass="ArcView" customModule="CoreAnimation" customModuleProvider="target">
+                    <rect key="frame" x="0.0" y="35" width="375" height="632"/>
+                    <color key="backgroundColor" red="0.10588235410000001" green="0.72156864399999998" blue="0.8627451062" alpha="0.69929901541095896" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="zqI-rc-eNE" firstAttribute="bottom" secondItem="fnl-2z-Ty3" secondAttribute="bottom" id="3fY-sf-UAh"/>
+                <constraint firstItem="Hzf-GO-CRd" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="NIa-tB-RU0"/>
+                <constraint firstItem="zqI-rc-eNE" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="Nxe-Iv-SMz"/>
+                <constraint firstItem="Hzf-GO-CRd" firstAttribute="bottom" secondItem="fnl-2z-Ty3" secondAttribute="bottom" id="ZLR-2S-JnV"/>
+                <constraint firstItem="Hzf-GO-CRd" firstAttribute="trailing" secondItem="fnl-2z-Ty3" secondAttribute="trailing" id="igM-bq-ibb"/>
+                <constraint firstItem="zqI-rc-eNE" firstAttribute="trailing" secondItem="fnl-2z-Ty3" secondAttribute="trailing" id="u4J-Ct-5BV"/>
+                <constraint firstItem="zqI-rc-eNE" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="15" id="ziS-RS-buz"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <point key="canvasLocation" x="24.5" y="51.5"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="pic0" width="480" height="300"/>
+    </resources>
+</document>

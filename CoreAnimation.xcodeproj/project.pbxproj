@@ -16,6 +16,9 @@
 		91A703C61F4D46B200BD06AF /* TextLayerVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 91A703C51F4D46B200BD06AF /* TextLayerVC.m */; };
 		91A703CA1F4D50DE00BD06AF /* TiledLayerVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 91A703C91F4D50DE00BD06AF /* TiledLayerVC.m */; };
 		91A703CE1F4D6F0300BD06AF /* TransformLayerVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 91A703CD1F4D6F0300BD06AF /* TransformLayerVC.m */; };
+		91B329342177458F00DD0042 /* ArcView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91B329332177458F00DD0042 /* ArcView.swift */; };
+		91B329392177607100DD0042 /* HollowOutVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91B329372177607100DD0042 /* HollowOutVC.swift */; };
+		91B3293A2177607100DD0042 /* HollowOutVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 91B329382177607100DD0042 /* HollowOutVC.xib */; };
 		91C938731F4AB31600E9B295 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 91C938721F4AB31600E9B295 /* main.m */; };
 		91C938761F4AB31600E9B295 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 91C938751F4AB31600E9B295 /* AppDelegate.m */; };
 		91C938791F4AB31600E9B295 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 91C938781F4AB31600E9B295 /* ViewController.m */; };
@@ -50,6 +53,10 @@
 		91A703C91F4D50DE00BD06AF /* TiledLayerVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TiledLayerVC.m; sourceTree = "<group>"; };
 		91A703CC1F4D6F0300BD06AF /* TransformLayerVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TransformLayerVC.h; sourceTree = "<group>"; };
 		91A703CD1F4D6F0300BD06AF /* TransformLayerVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TransformLayerVC.m; sourceTree = "<group>"; };
+		91B329332177458F00DD0042 /* ArcView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArcView.swift; sourceTree = "<group>"; };
+		91B32935217745CC00DD0042 /* CoreAnimation-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "CoreAnimation-Bridging-Header.h"; sourceTree = "<group>"; };
+		91B329372177607100DD0042 /* HollowOutVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HollowOutVC.swift; sourceTree = "<group>"; };
+		91B329382177607100DD0042 /* HollowOutVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HollowOutVC.xib; sourceTree = "<group>"; };
 		91C9386E1F4AB31600E9B295 /* CoreAnimation.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CoreAnimation.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		91C938721F4AB31600E9B295 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		91C938741F4AB31600E9B295 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -122,6 +129,7 @@
 				91A703BE1F4C6A8800BD06AF /* ShapeLayerVC.m */,
 				91A703C01F4D238500BD06AF /* DownView.h */,
 				91A703C11F4D238500BD06AF /* DownView.m */,
+				91B329332177458F00DD0042 /* ArcView.swift */,
 			);
 			path = ShapeLayer;
 			sourceTree = "<group>";
@@ -153,6 +161,15 @@
 			path = TransformLayer;
 			sourceTree = "<group>";
 		};
+		91B329362177604200DD0042 /* HollowOut */ = {
+			isa = PBXGroup;
+			children = (
+				91B329372177607100DD0042 /* HollowOutVC.swift */,
+				91B329382177607100DD0042 /* HollowOutVC.xib */,
+			);
+			path = HollowOut;
+			sourceTree = "<group>";
+		};
 		91C938651F4AB31600E9B295 = {
 			isa = PBXGroup;
 			children = (
@@ -176,6 +193,7 @@
 				91C938881F4AB39300E9B295 /* Animations */,
 				91C938741F4AB31600E9B295 /* AppDelegate.h */,
 				91C938751F4AB31600E9B295 /* AppDelegate.m */,
+				91B32935217745CC00DD0042 /* CoreAnimation-Bridging-Header.h */,
 				91C938771F4AB31600E9B295 /* ViewController.h */,
 				91C938781F4AB31600E9B295 /* ViewController.m */,
 				91C9387A1F4AB31600E9B295 /* Main.storyboard */,
@@ -198,6 +216,7 @@
 		91C938881F4AB39300E9B295 /* Animations */ = {
 			isa = PBXGroup;
 			children = (
+				91B329362177604200DD0042 /* HollowOut */,
 				919BE021211E7DE600F42A0A /* Complete */,
 				91A703CB1F4D6EE600BD06AF /* TransformLayer */,
 				91A703C71F4D50CA00BD06AF /* TiledLayer */,
@@ -301,6 +320,7 @@
 				TargetAttributes = {
 					91C9386D1F4AB31600E9B295 = {
 						CreatedOnToolsVersion = 8.3;
+						LastSwiftMigration = 0940;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -332,6 +352,7 @@
 				91428F4E1F4BC5100023561F /* ReplicatorLayerVC.xib in Resources */,
 				91C938811F4AB31600E9B295 /* LaunchScreen.storyboard in Resources */,
 				91C9387E1F4AB31600E9B295 /* Assets.xcassets in Resources */,
+				91B3293A2177607100DD0042 /* HollowOutVC.xib in Resources */,
 				91C9387C1F4AB31600E9B295 /* Main.storyboard in Resources */,
 				91C938961F4ACC1D00E9B295 /* DisplayLinkVC.xib in Resources */,
 			);
@@ -354,11 +375,13 @@
 				91C938941F4AC6EA00E9B295 /* DisplayLinkVC.m in Sources */,
 				91428F4D1F4BC5100023561F /* ReplicatorLayerVC.m in Sources */,
 				91F753D71F4B245100D1CA08 /* GradientLayerVC.m in Sources */,
+				91B329392177607100DD0042 /* HollowOutVC.swift in Sources */,
 				91C9389A1F4AEDC700E9B295 /* EAGLLayerVC.m in Sources */,
 				91A703CA1F4D50DE00BD06AF /* TiledLayerVC.m in Sources */,
 				91C938761F4AB31600E9B295 /* AppDelegate.m in Sources */,
 				91A703C21F4D238500BD06AF /* DownView.m in Sources */,
 				91C938731F4AB31600E9B295 /* main.m in Sources */,
+				91B329342177458F00DD0042 /* ArcView.swift in Sources */,
 				91A703C61F4D46B200BD06AF /* TextLayerVC.m in Sources */,
 				91A703CE1F4D6F0300BD06AF /* TransformLayerVC.m in Sources */,
 			);
@@ -480,10 +503,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = CoreAnimation/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.ChenDao.CoreAnimation;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "CoreAnimation//CoreAnimation-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
 		};
@@ -491,10 +518,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = CoreAnimation/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.ChenDao.CoreAnimation;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "CoreAnimation//CoreAnimation-Bridging-Header.h";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
 		};

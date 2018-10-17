@@ -8,6 +8,7 @@
 
 #import "ShapeLayerVC.h"
 #import "DownView.h"
+#import "CoreAnimation-Swift.h"
 
 @interface ShapeLayerVC ()<CAAnimationDelegate>
 @property (strong, nonatomic)DownView *downView0;

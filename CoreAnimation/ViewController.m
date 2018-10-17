@@ -19,6 +19,7 @@
 #import "TiledLayerVC.h"
 #import "TransformLayerVC.h"
 #import "CompleteViewController.h"
+#import "CoreAnimation-Swift.h"
 
 static NSString *cellID =@"myCell";
 
@@ -37,7 +38,7 @@ static NSString *cellID =@"myCell";
     self.view.backgroundColor = [UIColor colorWithRed:212/255.0 green:239/255.0 blue:212/255.0 alpha:1];
     self.tableView.backgroundColor = self.view.backgroundColor;
     [self.tableView registerClass:[UITableViewCell class] forCellReuseIdentifier:cellID];
-    self.dataSource = @[@"转场动画",@"屏幕刷新监听器",@"OpenGL",@"粒子引擎",@"渐变色",@"重复动画",@"滚动图层",@"ShapeLayer",@"文本图层",@"贴图切割",@"3D动画",@"加载完成动画"];
+    self.dataSource = @[@"转场动画",@"屏幕刷新监听器",@"OpenGL",@"粒子引擎",@"渐变色",@"重复动画",@"滚动图层",@"ShapeLayer",@"文本图层",@"贴图切割",@"3D动画",@"加载完成动画",@"镂空效果"];
 }
 
 
@@ -156,6 +157,14 @@ static NSString *cellID =@"myCell";
             [self.navigationController pushViewController:ctvc animated:YES];
         }
             break;
+            case 12:
+        {
+            HollowOutVC *hovc = [[HollowOutVC alloc] init];
+            [self.navigationController pushViewController:hovc animated:YES];
+        }
+            break;
+            
+            
             
             
             
