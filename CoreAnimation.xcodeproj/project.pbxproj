@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		910E9C82217B877F0016DD90 /* iOS 绘图结构图.graffle in Resources */ = {isa = PBXBuildFile; fileRef = 910E9C81217B877F0016DD90 /* iOS 绘图结构图.graffle */; };
 		91428F4D1F4BC5100023561F /* ReplicatorLayerVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 91428F4B1F4BC5100023561F /* ReplicatorLayerVC.m */; };
 		91428F4E1F4BC5100023561F /* ReplicatorLayerVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 91428F4C1F4BC5100023561F /* ReplicatorLayerVC.xib */; };
 		91428F521F4C3DC10023561F /* ScrollLayerVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 91428F511F4C3DC10023561F /* ScrollLayerVC.m */; };
@@ -36,6 +37,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		910E9C81217B877F0016DD90 /* iOS 绘图结构图.graffle */ = {isa = PBXFileReference; lastKnownFileType = file; path = "iOS 绘图结构图.graffle"; sourceTree = "<group>"; };
 		91428F4A1F4BC5100023561F /* ReplicatorLayerVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ReplicatorLayerVC.h; sourceTree = "<group>"; };
 		91428F4B1F4BC5100023561F /* ReplicatorLayerVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ReplicatorLayerVC.m; sourceTree = "<group>"; };
 		91428F4C1F4BC5100023561F /* ReplicatorLayerVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ReplicatorLayerVC.xib; sourceTree = "<group>"; };
@@ -164,6 +166,7 @@
 		91B329362177604200DD0042 /* HollowOut */ = {
 			isa = PBXGroup;
 			children = (
+				910E9C81217B877F0016DD90 /* iOS 绘图结构图.graffle */,
 				91B329372177607100DD0042 /* HollowOutVC.swift */,
 				91B329382177607100DD0042 /* HollowOutVC.xib */,
 			);
@@ -352,6 +355,7 @@
 				91428F4E1F4BC5100023561F /* ReplicatorLayerVC.xib in Resources */,
 				91C938811F4AB31600E9B295 /* LaunchScreen.storyboard in Resources */,
 				91C9387E1F4AB31600E9B295 /* Assets.xcassets in Resources */,
+				910E9C82217B877F0016DD90 /* iOS 绘图结构图.graffle in Resources */,
 				91B3293A2177607100DD0042 /* HollowOutVC.xib in Resources */,
 				91C9387C1F4AB31600E9B295 /* Main.storyboard in Resources */,
 				91C938961F4ACC1D00E9B295 /* DisplayLinkVC.xib in Resources */,

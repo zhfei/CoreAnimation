@@ -25,20 +25,66 @@ class ArcView: UIView {
         // Drawing code
         //像CG一样绘图
         
-        UIColor.red.setStroke()
-        UIColor.brown.setFill()
-        let cgRect = CGRect(x: 10, y: 10, width: 300, height: 200)
-        let bezier = UIBezierPath()
-        bezier.lineWidth = 5
-        bezier.lineCapStyle = .round
-        bezier.lineJoinStyle = .round
+//        UIColor.red.setStroke()
+//        UIColor.brown.setFill()
+//        let cgRect = CGRect(x: 10, y: 10, width: 300, height: 200)
+//        let bezier = UIBezierPath()
+//        bezier.lineWidth = 5
+//        bezier.lineCapStyle = .round
+//        bezier.lineJoinStyle = .round
+//
+//        bezier.move(to: cgRect.origin)
+//        bezier.addLine(to: CGPoint(x: 100, y: 100))
+//        bezier.addLine(to: CGPoint(x: 50, y: 100))
+//        bezier.close()
+//        bezier.fill()
+//        bezier.stroke()
         
-        bezier.move(to: cgRect.origin)
-        bezier.addLine(to: CGPoint(x: 100, y: 100))
-        bezier.addLine(to: CGPoint(x: 50, y: 100))
-        bezier.close()
-        bezier.fill()
-        bezier.stroke()
+//        //1.拿到上下文
+//        let context = UIGraphicsGetCurrentContext()
+//        //2.绘制路径
+//        let bez = UIBezierPath()
+//        bez.move(to: CGPoint(x: 10, y: 10))
+//        bez.addLine(to: CGPoint(x: 100, y: 100))
+//        //3.把路径添加到上下文
+//        context?.addPath(bez.cgPath)
+//        //4.绘制上下文中的路径
+//        context?.strokePath()
+        
+//        //1.拿到上下文
+//        let context = UIGraphicsGetCurrentContext()
+//        UIColor.red.setStroke()
+//        //2.绘制路径
+//        let bez = UIBezierPath()
+//        bez.lineWidth = 2
+//        bez.move(to: CGPoint(x: 10, y: 10))
+//        bez.addLine(to: CGPoint(x: 100, y: 100))
+//        bez.addLine(to: CGPoint(x: 50, y: 100))
+//        bez.close()
+//        //3.把路径添加到上下文
+//        context?.addPath(bez.cgPath)
+//        //4.绘制上下文中的路径
+//        context?.strokePath()
+        
+//        //1.拿到上下文
+//        let context = UIGraphicsGetCurrentContext()
+//        UIColor.red.setFill()
+//        //2.绘制路径
+//        let bez = UIBezierPath(ovalIn: CGRect(x: 20, y: 20, width: 100, height: 200))
+//        //3.把路径添加到上下文
+//        context?.addPath(bez.cgPath)
+//        //4.绘制上下文中的路径
+//        context?.fillPath()
+        
+        //1.拿到上下文
+        let context = UIGraphicsGetCurrentContext()
+        UIColor.blue.setFill()
+        //2.绘制路径
+        let bez = UIBezierPath(arcCenter: CGPoint(x: 60, y: 60), radius: 50, startAngle: 0, endAngle: CGFloat(M_PI*2), clockwise: false)
+        //3.把路径添加到上下文
+        context?.addPath(bez.cgPath)
+        //4.绘制上下文中的路径
+        context?.fillPath()
     }
     
     
