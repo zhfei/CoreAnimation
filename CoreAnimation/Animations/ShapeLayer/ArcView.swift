@@ -138,13 +138,152 @@ class ArcView: UIView {
 //        text.draw(in: rect, withAttributes: attr)
         
         
-        //文字绘制可以不获取当前上下文，但是必须要做子view的draw方法内
-        let image = UIImage(named: "timg")
+//        //文字绘制可以不获取当前上下文，但是必须要做子view的draw方法内
+//        let image = UIImage(named: "timg")
+//
+//        let rect = CGRect(x: 20, y: 20, width: 200, height: 100)
+//        image?.draw(in: rect, blendMode: CGBlendMode.normal, alpha: 1)
         
-        let rect = CGRect(x: 20, y: 20, width: 200, height: 100)
-        image?.draw(in: rect, blendMode: CGBlendMode.normal, alpha: 1)
+        //在draw中的上下文里面，设置不同的的属性后划线，最终画出来的结果是一样的，因为上下文中对属性多次赋值，最终属性保存的是最后的赋值。
+        //貌似对不同的线段设置不同颜色，实际到最后是最后的颜色值
+//        let context = UIGraphicsGetCurrentContext()
+//
+//        let bez = UIBezierPath()
+//        bez.lineWidth = 5
+//        bez.move(to: CGPoint(x: 50, y: 20))
+//        bez.addLine(to: CGPoint(x: 50, y: 100))
+//        UIColor.purple.setStroke()
+//        bez.stroke()
+//
+//        bez.lineWidth = 5
+//        bez.move(to: CGPoint(x: 100, y: 20))
+//        bez.addLine(to: CGPoint(x: 100, y: 100))
+//        UIColor.brown.setStroke()
+//        bez.stroke()
+//
+//        bez.lineWidth = 5
+//        bez.move(to: CGPoint(x: 150, y: 20))
+//        bez.addLine(to: CGPoint(x: 150, y: 100))
+//        UIColor.red.setStroke()
+//        bez.stroke()
+        
+//        //在上下文中有个状态栈概念，可以通过在设置不同上下文属性时，将不同状态的上下文入栈，可以保存起来。当用到对应的栈状态时，从状态栈弹出就可以了。
+//        let context = UIGraphicsGetCurrentContext()
+//        UIColor.purple.setStroke()
+//        context?.saveGState()
+//
+//        let context1 = UIGraphicsGetCurrentContext()
+//        UIColor.brown.setStroke()
+//        context1?.saveGState()
+//
+//        let context2 = UIGraphicsGetCurrentContext()
+//        UIColor.red.setStroke()
+//        context2?.saveGState()
+//
 
+//        context2?.restoreGState()
+//        context2?.setLineWidth(5)
+//        context2?.move(to: CGPoint(x: 50, y: 20))
+//        context2?.addLine(to: CGPoint(x: 50, y: 100))
+//        UIColor.red.setStroke()
+//        context2?.strokePath()
+//
+//
+//        context1?.restoreGState()
+//        context1?.setLineWidth(5)
+//        context1?.move(to: CGPoint(x: 100, y: 20))
+//        context1?.addLine(to: CGPoint(x: 100, y: 100))
+//        UIColor.brown.setStroke()
+//        context1?.strokePath()
+//
+//        context?.restoreGState()
+//        context?.setLineWidth(5)
+//        context?.move(to: CGPoint(x: 150, y: 20))
+//        context?.addLine(to: CGPoint(x: 150, y: 100))
+//        UIColor.purple.setStroke()
+//        context?.strokePath()
         
+        
+//        //在上下文中有个状态栈概念，可以通过在设置不同上下文属性时，将不同状态的上下文入栈，可以保存起来。当用到对应的栈状态时，从状态栈弹出就可以了。
+//        //而用贝塞尔曲线则无需考虑状态栈，只需要创建一个新的贝塞尔对象即可。
+//        let bez = UIBezierPath()
+//        bez.lineWidth = 5
+//        bez.move(to: CGPoint(x: 50, y: 20))
+//        bez.addLine(to: CGPoint(x: 50, y: 100))
+//        UIColor.purple.setStroke()
+//        bez.stroke()
+//
+//        let bez1 = UIBezierPath()
+//        bez1.lineWidth = 5
+//        bez1.move(to: CGPoint(x: 100, y: 20))
+//        bez1.addLine(to: CGPoint(x: 100, y: 100))
+//        UIColor.brown.setStroke()
+//        bez1.stroke()
+//
+//        let bez2 = UIBezierPath()
+//        bez2.lineWidth = 5
+//        bez2.move(to: CGPoint(x: 150, y: 20))
+//        bez2.addLine(to: CGPoint(x: 150, y: 100))
+//        UIColor.red.setStroke()
+//        bez2.stroke()
+        
+        
+//        //利用上下文绘制渐变色（圆形）
+//        let context = UIGraphicsGetCurrentContext()
+//        //颜色空间
+//        let colorSpace = CGColorSpaceCreateDeviceRGB()
+//        let startColor = UIColor.black
+//        let endColor = UIColor.red
+//        //颜色数组
+//        let colors = [startColor.cgColor,endColor.cgColor]
+//        //颜色所处位置
+//        let locations:[CGFloat] = [0,1]
+//
+//
+//        let gradient = CGGradient(colorsSpace: colorSpace, colors: colors as! CFArray, locations: locations)
+//        let center = CGPoint(x: rect.size.width*0.5, y: rect.size.height*0.5)
+//        let radius = rect.size.height*0.3
+//        context?.drawRadialGradient(gradient!, startCenter: center, startRadius: radius*0.2, endCenter: center, endRadius: radius, options: CGGradientDrawingOptions.drawsBeforeStartLocation)
+        
+//        //利用上下文绘制渐变色（clip形）
+//        let context = UIGraphicsGetCurrentContext()
+//        //颜色空间
+//        let colorSpace = CGColorSpaceCreateDeviceRGB()
+//        let startColor = UIColor.black
+//        let endColor = UIColor.red
+//        //颜色数组
+//        let colors = [startColor.cgColor,endColor.cgColor]
+//        //颜色所处位置
+//        let locations:[CGFloat] = [0,1]
+//
+//
+//        let gradient = CGGradient(colorsSpace: colorSpace, colors: colors as! CFArray, locations: locations)
+//        let start = CGPoint(x: 0, y: 0)
+//        let end = CGPoint(x: rect.size.width, y: 0)
+//
+//        let heigh = rect.size.height/4
+//        let width = rect.size.width/4
+//
+//        let rect1 = CGRect(x: width, y: heigh, width: width, height: width)
+//        let rect2 = CGRect(x: width*3, y: heigh, width: width, height: width)
+//        let rect3 = CGRect(x: width*0, y: heigh*3, width: width, height: width)
+//        let rect4 = CGRect(x: width*2, y: heigh*3, width: width, height: width)
+//
+//        context?.clip(to: [rect1,rect2,rect3,rect4])
+//        context?.drawLinearGradient(gradient!, start: start, end: end, options: CGGradientDrawingOptions.drawsBeforeStartLocation)
+        
+        
+//        //图层渐变色
+//        let gradient = CAGradientLayer()
+//        gradient.frame = CGRect(x: 0, y: 0, width: 200, height: 100)
+//        gradient.startPoint = CGPoint(x: 0, y: 1)
+//        gradient.endPoint = CGPoint(x: 1, y: 1)
+//        gradient.colors = [UIColor.red.cgColor,UIColor.blue.cgColor,UIColor.yellow.cgColor]
+//        gradient.locations = [0,0.5,1]
+//        gradient.type = CAGradientLayerType(string: "axial") as String
+////        gradient.type = CAGradientLayerType(string: "radial") as String
+////        gradient.type = CAGradientLayerType(string: "conic") as String
+//        self.layer.addSublayer(gradient)
     }
     
     

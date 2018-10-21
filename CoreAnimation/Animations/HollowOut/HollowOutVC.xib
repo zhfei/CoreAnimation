@@ -12,6 +12,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="HollowOutVC" customModule="CoreAnimation" customModuleProvider="target">
             <connections>
+                <outlet property="bgImageView" destination="Hzf-GO-CRd" id="407-7f-JHo"/>
                 <outlet property="progressView" destination="jWy-AX-YDs" id="e1K-Bm-Cu0"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>

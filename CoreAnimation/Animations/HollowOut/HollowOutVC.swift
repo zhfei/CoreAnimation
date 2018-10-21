@@ -14,10 +14,16 @@ class HollowOutVC: UIViewController {
     @IBAction func sliderAction(_ sender: UISlider) {
         self.progressView.progressValue = CGFloat(sender.value)
     }
+    
+    @IBOutlet weak var bgImageView: UIImageView!
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+        
+
+        
+        
         
     }
 
@@ -26,6 +32,12 @@ class HollowOutVC: UIViewController {
 
     }
     
+    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+//        self.bgImageView.image = UIImage.zhf_waterImage("cheat", waterText: "这里是水印！！", rect: self.bgImageView.bounds)
+//        self.bgImageView.image = UIImage.zhf_waterImage("cheat", rect: self.bgImageView.bounds, waterImageName: "cheat", waterRect: CGRect(x: 20, y: 20, width: 100, height: 100))
+//        self.bgImageView.image = UIImage.zhf_clipCircleImage("BigPic2", rect: self.bgImageView.bounds, circleRect: CGRect(x: 100, y: 20, width: 80, height: 80))
+        self.bgImageView.image = UIImage.zhf_clipCircleImage("BigPic2", rect: self.bgImageView.bounds, circleRect: CGRect(x: 100, y: 20, width: 80, height: 80), borderWidth: 5, borderColor: UIColor.blue)
+    }
     
 
     /*

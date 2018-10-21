@@ -12,6 +12,7 @@
 		91428F4D1F4BC5100023561F /* ReplicatorLayerVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 91428F4B1F4BC5100023561F /* ReplicatorLayerVC.m */; };
 		91428F4E1F4BC5100023561F /* ReplicatorLayerVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 91428F4C1F4BC5100023561F /* ReplicatorLayerVC.xib */; };
 		91428F521F4C3DC10023561F /* ScrollLayerVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 91428F511F4C3DC10023561F /* ScrollLayerVC.m */; };
+		9168A8F2217CC44E0078D84E /* ImageExtend.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9168A8F1217CC44E0078D84E /* ImageExtend.swift */; };
 		919BE024211E7DE600F42A0A /* CompleteViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 919BE023211E7DE600F42A0A /* CompleteViewController.m */; };
 		91A703BF1F4C6A8800BD06AF /* ShapeLayerVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 91A703BE1F4C6A8800BD06AF /* ShapeLayerVC.m */; };
 		91A703C21F4D238500BD06AF /* DownView.m in Sources */ = {isa = PBXBuildFile; fileRef = 91A703C11F4D238500BD06AF /* DownView.m */; };
@@ -45,6 +46,7 @@
 		91428F4C1F4BC5100023561F /* ReplicatorLayerVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ReplicatorLayerVC.xib; sourceTree = "<group>"; };
 		91428F501F4C3DC10023561F /* ScrollLayerVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ScrollLayerVC.h; sourceTree = "<group>"; };
 		91428F511F4C3DC10023561F /* ScrollLayerVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ScrollLayerVC.m; sourceTree = "<group>"; };
+		9168A8F1217CC44E0078D84E /* ImageExtend.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageExtend.swift; sourceTree = "<group>"; };
 		919BE022211E7DE600F42A0A /* CompleteViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CompleteViewController.h; sourceTree = "<group>"; };
 		919BE023211E7DE600F42A0A /* CompleteViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CompleteViewController.m; sourceTree = "<group>"; };
 		91A703BD1F4C6A8800BD06AF /* ShapeLayerVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ShapeLayerVC.h; sourceTree = "<group>"; };
@@ -172,6 +174,7 @@
 				91B329372177607100DD0042 /* HollowOutVC.swift */,
 				91B329382177607100DD0042 /* HollowOutVC.xib */,
 				9112F47F217C6A0500C50A49 /* ProgressView.swift */,
+				9168A8F1217CC44E0078D84E /* ImageExtend.swift */,
 			);
 			path = HollowOut;
 			sourceTree = "<group>";
@@ -392,6 +395,7 @@
 				9112F480217C6A0500C50A49 /* ProgressView.swift in Sources */,
 				91A703C61F4D46B200BD06AF /* TextLayerVC.m in Sources */,
 				91A703CE1F4D6F0300BD06AF /* TransformLayerVC.m in Sources */,
+				9168A8F2217CC44E0078D84E /* ImageExtend.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
