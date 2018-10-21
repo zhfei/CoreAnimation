@@ -1,17 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="HollowOutVC" customModule="CoreAnimation" customModuleProvider="target">
             <connections>
+                <outlet property="progressView" destination="jWy-AX-YDs" id="e1K-Bm-Cu0"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -27,22 +28,44 @@
                     </constraints>
                 </imageView>
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zqI-rc-eNE" customClass="ArcView" customModule="CoreAnimation" customModuleProvider="target">
-                    <rect key="frame" x="0.0" y="35" width="375" height="632"/>
+                    <rect key="frame" x="0.0" y="240" width="375" height="427"/>
                     <color key="backgroundColor" red="0.10588235410000001" green="0.72156864399999998" blue="0.8627451062" alpha="0.69929901541095896" colorSpace="custom" customColorSpace="calibratedRGB"/>
                 </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jWy-AX-YDs" customClass="ProgressView" customModule="CoreAnimation" customModuleProvider="target">
+                    <rect key="frame" x="0.0" y="20" width="375" height="180"/>
+                    <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="180" id="pyQ-yO-H62"/>
+                    </constraints>
+                </view>
+                <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="5cY-V7-mhd">
+                    <rect key="frame" x="68" y="203" width="239" height="30"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="235" id="ie8-PB-cud"/>
+                    </constraints>
+                    <connections>
+                        <action selector="sliderAction:" destination="-1" eventType="valueChanged" id="CLk-GG-7n0"/>
+                    </connections>
+                </slider>
             </subviews>
             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <constraints>
+                <constraint firstItem="jWy-AX-YDs" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="0nd-3h-jZa"/>
                 <constraint firstItem="zqI-rc-eNE" firstAttribute="bottom" secondItem="fnl-2z-Ty3" secondAttribute="bottom" id="3fY-sf-UAh"/>
+                <constraint firstItem="5cY-V7-mhd" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="J6M-iE-ccl"/>
+                <constraint firstItem="zqI-rc-eNE" firstAttribute="top" secondItem="5cY-V7-mhd" secondAttribute="bottom" constant="8" id="LwR-jn-mn0"/>
                 <constraint firstItem="Hzf-GO-CRd" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="NIa-tB-RU0"/>
                 <constraint firstItem="zqI-rc-eNE" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="Nxe-Iv-SMz"/>
+                <constraint firstItem="jWy-AX-YDs" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="YCu-uG-j5R"/>
                 <constraint firstItem="Hzf-GO-CRd" firstAttribute="bottom" secondItem="fnl-2z-Ty3" secondAttribute="bottom" id="ZLR-2S-JnV"/>
+                <constraint firstItem="5cY-V7-mhd" firstAttribute="top" secondItem="jWy-AX-YDs" secondAttribute="bottom" constant="3" id="ZlO-FY-H7A"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="jWy-AX-YDs" secondAttribute="trailing" id="epy-dn-EqF"/>
                 <constraint firstItem="Hzf-GO-CRd" firstAttribute="trailing" secondItem="fnl-2z-Ty3" secondAttribute="trailing" id="igM-bq-ibb"/>
                 <constraint firstItem="zqI-rc-eNE" firstAttribute="trailing" secondItem="fnl-2z-Ty3" secondAttribute="trailing" id="u4J-Ct-5BV"/>
-                <constraint firstItem="zqI-rc-eNE" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="15" id="ziS-RS-buz"/>
+                <constraint firstItem="zqI-rc-eNE" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="220" id="ziS-RS-buz"/>
             </constraints>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
-            <point key="canvasLocation" x="24.5" y="51.5"/>
+            <point key="canvasLocation" x="23.199999999999999" y="50.824587706146929"/>
         </view>
     </objects>
     <resources>

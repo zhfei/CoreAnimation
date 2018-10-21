@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		910E9C82217B877F0016DD90 /* iOS 绘图结构图.graffle in Resources */ = {isa = PBXBuildFile; fileRef = 910E9C81217B877F0016DD90 /* iOS 绘图结构图.graffle */; };
+		9112F480217C6A0500C50A49 /* ProgressView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9112F47F217C6A0500C50A49 /* ProgressView.swift */; };
 		91428F4D1F4BC5100023561F /* ReplicatorLayerVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 91428F4B1F4BC5100023561F /* ReplicatorLayerVC.m */; };
 		91428F4E1F4BC5100023561F /* ReplicatorLayerVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 91428F4C1F4BC5100023561F /* ReplicatorLayerVC.xib */; };
 		91428F521F4C3DC10023561F /* ScrollLayerVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 91428F511F4C3DC10023561F /* ScrollLayerVC.m */; };
@@ -38,6 +39,7 @@
 
 /* Begin PBXFileReference section */
 		910E9C81217B877F0016DD90 /* iOS 绘图结构图.graffle */ = {isa = PBXFileReference; lastKnownFileType = file; path = "iOS 绘图结构图.graffle"; sourceTree = "<group>"; };
+		9112F47F217C6A0500C50A49 /* ProgressView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgressView.swift; sourceTree = "<group>"; };
 		91428F4A1F4BC5100023561F /* ReplicatorLayerVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ReplicatorLayerVC.h; sourceTree = "<group>"; };
 		91428F4B1F4BC5100023561F /* ReplicatorLayerVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ReplicatorLayerVC.m; sourceTree = "<group>"; };
 		91428F4C1F4BC5100023561F /* ReplicatorLayerVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ReplicatorLayerVC.xib; sourceTree = "<group>"; };
@@ -169,6 +171,7 @@
 				910E9C81217B877F0016DD90 /* iOS 绘图结构图.graffle */,
 				91B329372177607100DD0042 /* HollowOutVC.swift */,
 				91B329382177607100DD0042 /* HollowOutVC.xib */,
+				9112F47F217C6A0500C50A49 /* ProgressView.swift */,
 			);
 			path = HollowOut;
 			sourceTree = "<group>";
@@ -386,6 +389,7 @@
 				91A703C21F4D238500BD06AF /* DownView.m in Sources */,
 				91C938731F4AB31600E9B295 /* main.m in Sources */,
 				91B329342177458F00DD0042 /* ArcView.swift in Sources */,
+				9112F480217C6A0500C50A49 /* ProgressView.swift in Sources */,
 				91A703C61F4D46B200BD06AF /* TextLayerVC.m in Sources */,
 				91A703CE1F4D6F0300BD06AF /* TransformLayerVC.m in Sources */,
 			);

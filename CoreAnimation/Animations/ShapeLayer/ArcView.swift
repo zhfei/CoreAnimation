@@ -76,15 +76,75 @@ class ArcView: UIView {
 //        //4.绘制上下文中的路径
 //        context?.fillPath()
         
-        //1.拿到上下文
-        let context = UIGraphicsGetCurrentContext()
-        UIColor.blue.setFill()
-        //2.绘制路径
-        let bez = UIBezierPath(arcCenter: CGPoint(x: 60, y: 60), radius: 50, startAngle: 0, endAngle: CGFloat(M_PI*2), clockwise: false)
-        //3.把路径添加到上下文
-        context?.addPath(bez.cgPath)
-        //4.绘制上下文中的路径
-        context?.fillPath()
+//        //1.拿到上下文
+//        let context = UIGraphicsGetCurrentContext()
+//        UIColor.blue.setFill()
+//        //2.绘制路径
+//        let bez = UIBezierPath(arcCenter: CGPoint(x: 60, y: 60), radius: 50, startAngle: 0, endAngle: CGFloat(M_PI*2), clockwise: false)
+//        //3.把路径添加到上下文
+//        context?.addPath(bez.cgPath)
+//        //4.绘制上下文中的路径
+//        context?.fillPath()
+        
+//        //1.拿到上下文
+//        let context = UIGraphicsGetCurrentContext()
+//        UIColor.blue.setFill()
+//        //2.绘制路径
+//        let bez = UIBezierPath(ovalIn: CGRect(x: 20, y: 20, width: 200, height: 100))
+//        //3.把路径添加到上下文
+//        context?.addPath(bez.cgPath)
+//        //4.绘制上下文中的路径
+//        context?.fillPath()
+        
+//        //1.拿到上下文
+//        let context = UIGraphicsGetCurrentContext()
+//        //2.绘制路径
+//        let text: NSString = "描述路径"
+////        UIColor.blue.setFill()
+//        let attr = [
+//            NSFontAttributeName: UIFont(name: "Helvetica Bold", size: 14.0)!,
+//            NSForegroundColorAttributeName:UIColor.red,
+//        ]
+//        let rect = CGRect(x: 20, y: 20, width: 200, height: 100)
+//        text.draw(in: rect, withAttributes: attr)
+//        //4.绘制上下文中的路径
+//        context?.fillPath()
+        
+//        //文字绘制可以不获取当前上下文，但是必须要做子view的draw方法内
+//        let text: NSString = "描述路径"
+//        //        UIColor.blue.setFill()
+//        let attr = [
+//            NSFontAttributeName: UIFont(name: "Helvetica Bold", size: 14.0)!,
+//            NSForegroundColorAttributeName:UIColor.red,
+//            ]
+//        let rect = CGRect(x: 20, y: 20, width: 200, height: 100)
+//        text.draw(in: rect, withAttributes: attr)
+
+//        //文字绘制可以不获取当前上下文，但是必须要做子view的draw方法内
+//        let text: NSString = "描述路径"
+//        //        UIColor.blue.setFill()
+//
+//        let shadow = NSShadow()
+//        shadow.shadowOffset = CGSize(width: 5, height: 5)
+//        shadow.shadowColor = UIColor.black
+//        shadow.shadowBlurRadius = 5
+//        let attr = [
+//            NSFontAttributeName: UIFont(name: "Helvetica Bold", size: 14.0)!,
+//            NSForegroundColorAttributeName:UIColor.red,
+//            NSBackgroundColorAttributeName:UIColor.blue,
+//            NSShadowAttributeName:shadow
+//            ]
+//        let rect = CGRect(x: 20, y: 20, width: 200, height: 100)
+//        text.draw(in: rect, withAttributes: attr)
+        
+        
+        //文字绘制可以不获取当前上下文，但是必须要做子view的draw方法内
+        let image = UIImage(named: "timg")
+        
+        let rect = CGRect(x: 20, y: 20, width: 200, height: 100)
+        image?.draw(in: rect, blendMode: CGBlendMode.normal, alpha: 1)
+
+        
     }
     
     
