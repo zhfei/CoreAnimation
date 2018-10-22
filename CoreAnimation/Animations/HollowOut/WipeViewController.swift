@@ -11,11 +11,14 @@ import UIKit
 class WipeViewController: UIViewController {
 
     @IBOutlet weak var wipeImageView: UIImageView!
+    @IBOutlet weak var topView: BorderView!
     
     var _sizeStartP: CGPoint = CGPoint(x: 0, y: 0)
     var oldSize: CGSize = CGSize(width: 0, height: 0)
     var width: CGFloat = 0
     var height: CGFloat = 0
+    var targetR: CGRect = CGRect(x: 0, y: 0, width: 0, height: 0)
+
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -36,18 +39,22 @@ class WipeViewController: UIViewController {
             oldSize = self.wipeImageView.bounds.size
         case UIGestureRecognizerState.changed:
             let curP = panGesture.location(in: self.wipeImageView)
-            
+
             let w = curP.x - _sizeStartP.x
             let h = curP.y - _sizeStartP.y
-            
+
             self.width = oldSize.width + w
             self.height = oldSize.height + h
-            
+
+            targetR = CGRect(x: _sizeStartP.x, y: _sizeStartP.y, width: w, height: h)
+            self.topView.targetRect = targetR
+
         case UIGestureRecognizerState.ended:
-            UIImage.zhf_cutScreenWithView(self.wipeImageView, cutFrame: CGRect(x: _sizeStartP.x, y: _sizeStartP.y, width: self.width, height: self.height)) { (image, data) in
+            UIImage.zhf_cutScreenWithView(self.wipeImageView, cutFrame: targetR) { (image, data) in
                 self.wipeImageView.image = image
+                self.topView.targetRect = CGRect(x: 0, y: 0, width: 0, height: 0)
             }
-            
+
         default:
             print("---")
         }
