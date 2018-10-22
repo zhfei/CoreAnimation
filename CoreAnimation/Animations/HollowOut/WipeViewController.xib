@@ -21,7 +21,7 @@
             <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <imageView userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="pic4" translatesAutoresizingMaskIntoConstraints="NO" id="kl2-pb-Y2b">
+                <imageView userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="meimei" translatesAutoresizingMaskIntoConstraints="NO" id="kl2-pb-Y2b">
                     <rect key="frame" x="0.0" y="115" width="375" height="552"/>
                 </imageView>
             </subviews>
@@ -37,6 +37,6 @@
         </view>
     </objects>
     <resources>
-        <image name="pic4" width="500" height="312"/>
+        <image name="meimei" width="600" height="900"/>
     </resources>
 </document>

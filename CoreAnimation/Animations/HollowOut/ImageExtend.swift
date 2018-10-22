@@ -92,6 +92,27 @@ extension UIImage {
         completeBlock(resultImage!,resultData! as NSData)
     }
     
+    static func zhf_cutScreenWithView(_ view: UIView, cutFrame:CGRect, completeBlock: ((_ image: UIImage, _ imageData: NSData) -> ()))  {
+        UIGraphicsBeginImageContext(view.bounds.size)
+        let context = UIGraphicsGetCurrentContext()
+        
+        context?.addRect(cutFrame)
+        context?.clip()
+        
+        view.layer.render(in: context!)
+        
+        var resultImage = UIGraphicsGetImageFromCurrentImageContext()
+        UIGraphicsEndImageContext()
+        
+        //二裁
+        UIGraphicsBeginImageContext(cutFrame.size)
+        resultImage?.draw(at: CGPoint(x: -cutFrame.origin.x, y: -cutFrame.origin.y))
+        resultImage = UIGraphicsGetImageFromCurrentImageContext()
+        
+        let resultData = UIImageJPEGRepresentation(resultImage!, 1)
+        completeBlock(resultImage!,resultData! as NSData)
+    }
+    
     static func zhf_wipeImage(_ view: UIView, currentPoint: CGPoint) -> UIImage {
         let nowPoint = currentPoint
         
