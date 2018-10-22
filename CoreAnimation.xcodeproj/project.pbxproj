@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		910E9C82217B877F0016DD90 /* iOS 绘图结构图.graffle in Resources */ = {isa = PBXBuildFile; fileRef = 910E9C81217B877F0016DD90 /* iOS 绘图结构图.graffle */; };
 		9112F480217C6A0500C50A49 /* ProgressView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9112F47F217C6A0500C50A49 /* ProgressView.swift */; };
+		9141F067217DAA7C00370D8E /* WipeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9141F065217DAA7C00370D8E /* WipeViewController.swift */; };
+		9141F068217DAA7C00370D8E /* WipeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9141F066217DAA7C00370D8E /* WipeViewController.xib */; };
 		91428F4D1F4BC5100023561F /* ReplicatorLayerVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 91428F4B1F4BC5100023561F /* ReplicatorLayerVC.m */; };
 		91428F4E1F4BC5100023561F /* ReplicatorLayerVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 91428F4C1F4BC5100023561F /* ReplicatorLayerVC.xib */; };
 		91428F521F4C3DC10023561F /* ScrollLayerVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 91428F511F4C3DC10023561F /* ScrollLayerVC.m */; };
@@ -41,6 +43,8 @@
 /* Begin PBXFileReference section */
 		910E9C81217B877F0016DD90 /* iOS 绘图结构图.graffle */ = {isa = PBXFileReference; lastKnownFileType = file; path = "iOS 绘图结构图.graffle"; sourceTree = "<group>"; };
 		9112F47F217C6A0500C50A49 /* ProgressView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgressView.swift; sourceTree = "<group>"; };
+		9141F065217DAA7C00370D8E /* WipeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WipeViewController.swift; sourceTree = "<group>"; };
+		9141F066217DAA7C00370D8E /* WipeViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = WipeViewController.xib; sourceTree = "<group>"; };
 		91428F4A1F4BC5100023561F /* ReplicatorLayerVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ReplicatorLayerVC.h; sourceTree = "<group>"; };
 		91428F4B1F4BC5100023561F /* ReplicatorLayerVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ReplicatorLayerVC.m; sourceTree = "<group>"; };
 		91428F4C1F4BC5100023561F /* ReplicatorLayerVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ReplicatorLayerVC.xib; sourceTree = "<group>"; };
@@ -173,6 +177,8 @@
 				910E9C81217B877F0016DD90 /* iOS 绘图结构图.graffle */,
 				91B329372177607100DD0042 /* HollowOutVC.swift */,
 				91B329382177607100DD0042 /* HollowOutVC.xib */,
+				9141F065217DAA7C00370D8E /* WipeViewController.swift */,
+				9141F066217DAA7C00370D8E /* WipeViewController.xib */,
 				9112F47F217C6A0500C50A49 /* ProgressView.swift */,
 				9168A8F1217CC44E0078D84E /* ImageExtend.swift */,
 			);
@@ -360,6 +366,7 @@
 				91F753D31F4B151200D1CA08 /* EmitterLayerVC.xib in Resources */,
 				91428F4E1F4BC5100023561F /* ReplicatorLayerVC.xib in Resources */,
 				91C938811F4AB31600E9B295 /* LaunchScreen.storyboard in Resources */,
+				9141F068217DAA7C00370D8E /* WipeViewController.xib in Resources */,
 				91C9387E1F4AB31600E9B295 /* Assets.xcassets in Resources */,
 				910E9C82217B877F0016DD90 /* iOS 绘图结构图.graffle in Resources */,
 				91B3293A2177607100DD0042 /* HollowOutVC.xib in Resources */,
@@ -376,6 +383,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				91A703BF1F4C6A8800BD06AF /* ShapeLayerVC.m in Sources */,
+				9141F067217DAA7C00370D8E /* WipeViewController.swift in Sources */,
 				91C938791F4AB31600E9B295 /* ViewController.m in Sources */,
 				91C938901F4ABBC600E9B295 /* BaseViewController.m in Sources */,
 				919BE024211E7DE600F42A0A /* CompleteViewController.m in Sources */,

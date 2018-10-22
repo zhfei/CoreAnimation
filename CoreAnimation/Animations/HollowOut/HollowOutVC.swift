@@ -22,7 +22,9 @@ class HollowOutVC: UIViewController {
         // Do any additional setup after loading the view.
         
 
+        let rightItem = UIBarButtonItem(barButtonSystemItem: UIBarButtonSystemItem.done, target: self, action: #selector(goToWipe))
         
+        self.navigationItem.setRightBarButton(rightItem, animated: true)
         
         
     }
@@ -32,11 +34,19 @@ class HollowOutVC: UIViewController {
 
     }
     
+    func goToWipe() {
+        self.navigationController?.pushViewController(WipeViewController(), animated: true)
+    }
+    
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
 //        self.bgImageView.image = UIImage.zhf_waterImage("cheat", waterText: "这里是水印！！", rect: self.bgImageView.bounds)
 //        self.bgImageView.image = UIImage.zhf_waterImage("cheat", rect: self.bgImageView.bounds, waterImageName: "cheat", waterRect: CGRect(x: 20, y: 20, width: 100, height: 100))
 //        self.bgImageView.image = UIImage.zhf_clipCircleImage("BigPic2", rect: self.bgImageView.bounds, circleRect: CGRect(x: 100, y: 20, width: 80, height: 80))
-        self.bgImageView.image = UIImage.zhf_clipCircleImage("BigPic2", rect: self.bgImageView.bounds, circleRect: CGRect(x: 100, y: 20, width: 80, height: 80), borderWidth: 5, borderColor: UIColor.blue)
+//        self.bgImageView.image = UIImage.zhf_clipCircleImage("BigPic2", rect: self.bgImageView.bounds, circleRect: CGRect(x: 100, y: 20, width: 80, height: 80), borderWidth: 5, borderColor: UIColor.blue)
+        
+        UIImage.zhf_cutScreenWithView(self.view) {image,data in
+            self.bgImageView.image = image
+        }
     }
     
 
