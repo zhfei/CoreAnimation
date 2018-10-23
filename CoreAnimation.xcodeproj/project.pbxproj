@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		910A7C1F217E0BD300689DCF /* BorderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 910A7C1E217E0BD300689DCF /* BorderView.swift */; };
 		910E9C82217B877F0016DD90 /* iOS 绘图结构图.graffle in Resources */ = {isa = PBXBuildFile; fileRef = 910E9C81217B877F0016DD90 /* iOS 绘图结构图.graffle */; };
 		9112F480217C6A0500C50A49 /* ProgressView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9112F47F217C6A0500C50A49 /* ProgressView.swift */; };
 		9141F067217DAA7C00370D8E /* WipeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9141F065217DAA7C00370D8E /* WipeViewController.swift */; };
@@ -44,6 +45,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		910A7C1E217E0BD300689DCF /* BorderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BorderView.swift; sourceTree = "<group>"; };
 		910E9C81217B877F0016DD90 /* iOS 绘图结构图.graffle */ = {isa = PBXFileReference; lastKnownFileType = file; path = "iOS 绘图结构图.graffle"; sourceTree = "<group>"; };
 		9112F47F217C6A0500C50A49 /* ProgressView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgressView.swift; sourceTree = "<group>"; };
 		9141F065217DAA7C00370D8E /* WipeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WipeViewController.swift; sourceTree = "<group>"; };
@@ -187,6 +189,7 @@
 				9141F065217DAA7C00370D8E /* WipeViewController.swift */,
 				9141F066217DAA7C00370D8E /* WipeViewController.xib */,
 				9112F47F217C6A0500C50A49 /* ProgressView.swift */,
+				910A7C1E217E0BD300689DCF /* BorderView.swift */,
 				9168A8F1217CC44E0078D84E /* ImageExtend.swift */,
 				919E73B8217F38C7003D5F37 /* UIColorExtend.swift */,
 				919E73BA217F3998003D5F37 /* DecimalExtend.swift */,
@@ -393,6 +396,7 @@
 			files = (
 				91A703BF1F4C6A8800BD06AF /* ShapeLayerVC.m in Sources */,
 				9141F067217DAA7C00370D8E /* WipeViewController.swift in Sources */,
+				910A7C1F217E0BD300689DCF /* BorderView.swift in Sources */,
 				91C938791F4AB31600E9B295 /* ViewController.m in Sources */,
 				91C938901F4ABBC600E9B295 /* BaseViewController.m in Sources */,
 				919BE024211E7DE600F42A0A /* CompleteViewController.m in Sources */,

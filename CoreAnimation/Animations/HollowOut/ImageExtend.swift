@@ -132,3 +132,7 @@ extension UIImage {
         return image!
     }
 }
+
+extension UIView {
+    
+}

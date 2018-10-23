@@ -1,17 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="WipeViewController" customModule="CoreAnimation" customModuleProvider="target">
             <connections>
+                <outlet property="topView" destination="aWe-hQ-RMG" id="BE5-AC-Ldr"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
                 <outlet property="wipeImageView" destination="kl2-pb-Y2b" id="Etl-Hc-S0u"/>
             </connections>
@@ -24,16 +25,24 @@
                 <imageView userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="meimei" translatesAutoresizingMaskIntoConstraints="NO" id="kl2-pb-Y2b">
                     <rect key="frame" x="0.0" y="115" width="375" height="552"/>
                 </imageView>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="aWe-hQ-RMG" customClass="BorderView" customModule="CoreAnimation" customModuleProvider="target">
+                    <rect key="frame" x="0.0" y="115" width="375" height="552"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                </view>
             </subviews>
             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <constraints>
                 <constraint firstItem="kl2-pb-Y2b" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="9wD-iL-1GP"/>
                 <constraint firstItem="kl2-pb-Y2b" firstAttribute="bottom" secondItem="fnl-2z-Ty3" secondAttribute="bottom" id="BVh-kk-c2K"/>
                 <constraint firstItem="kl2-pb-Y2b" firstAttribute="trailing" secondItem="fnl-2z-Ty3" secondAttribute="trailing" id="FtL-bA-yPg"/>
+                <constraint firstItem="aWe-hQ-RMG" firstAttribute="width" secondItem="kl2-pb-Y2b" secondAttribute="width" id="QCC-IU-hDd"/>
+                <constraint firstItem="aWe-hQ-RMG" firstAttribute="top" secondItem="kl2-pb-Y2b" secondAttribute="top" id="Uqs-wZ-XP6"/>
                 <constraint firstItem="kl2-pb-Y2b" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="95" id="ii6-6g-KOJ"/>
+                <constraint firstItem="aWe-hQ-RMG" firstAttribute="height" secondItem="kl2-pb-Y2b" secondAttribute="height" id="rKa-lP-dKi"/>
+                <constraint firstItem="aWe-hQ-RMG" firstAttribute="leading" secondItem="kl2-pb-Y2b" secondAttribute="leading" id="s7w-vI-3NZ"/>
             </constraints>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
-            <point key="canvasLocation" x="24.5" y="51.5"/>
+            <point key="canvasLocation" x="23.199999999999999" y="50.824587706146929"/>
         </view>
     </objects>
     <resources>
