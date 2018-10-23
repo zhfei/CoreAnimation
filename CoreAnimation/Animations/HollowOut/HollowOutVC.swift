@@ -10,7 +10,7 @@ import UIKit
 
 class HollowOutVC: UIViewController {
 
-    @IBOutlet weak var progressView: ProgressView!
+    @IBOutlet weak var progressView: PartArcView!
     @IBAction func sliderAction(_ sender: UISlider) {
         self.progressView.progressValue = CGFloat(sender.value)
     }

@@ -66,6 +66,7 @@ class PartArcView: UIView {
         let midSmallY: CGFloat = arcCenter.y + sin(endAng)*(bigOuterRadius-smailRadius)
         
         context1?.addArc(center: CGPoint(x: midSmallX, y: midSmallY), radius: smailRadius, startAngle: endAng, endAngle: endAng-CGFloat(M_PI), clockwise: false)
+        
         context1?.addArc(center: arcCenter, radius: bigInnerRadius, startAngle: endAng, endAngle: CGFloat(M_PI*2), clockwise: false)
         context1?.addArc(center: CGPoint(x: width-smailRadius-borderWidth, y: arcCenter.y), radius: smailRadius, startAngle: CGFloat(M_PI), endAngle: CGFloat(M_PI*2), clockwise: true)
         context1?.setFillColor(UIColor(hex: "e7e3e3").cgColor)
