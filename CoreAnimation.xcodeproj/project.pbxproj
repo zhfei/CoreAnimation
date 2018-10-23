@@ -16,6 +16,9 @@
 		91428F521F4C3DC10023561F /* ScrollLayerVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 91428F511F4C3DC10023561F /* ScrollLayerVC.m */; };
 		9168A8F2217CC44E0078D84E /* ImageExtend.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9168A8F1217CC44E0078D84E /* ImageExtend.swift */; };
 		919BE024211E7DE600F42A0A /* CompleteViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 919BE023211E7DE600F42A0A /* CompleteViewController.m */; };
+		919E73B7217F3843003D5F37 /* PartArcView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 919E73B6217F3843003D5F37 /* PartArcView.swift */; };
+		919E73B9217F38C7003D5F37 /* UIColorExtend.swift in Sources */ = {isa = PBXBuildFile; fileRef = 919E73B8217F38C7003D5F37 /* UIColorExtend.swift */; };
+		919E73BB217F3998003D5F37 /* DecimalExtend.swift in Sources */ = {isa = PBXBuildFile; fileRef = 919E73BA217F3998003D5F37 /* DecimalExtend.swift */; };
 		91A703BF1F4C6A8800BD06AF /* ShapeLayerVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 91A703BE1F4C6A8800BD06AF /* ShapeLayerVC.m */; };
 		91A703C21F4D238500BD06AF /* DownView.m in Sources */ = {isa = PBXBuildFile; fileRef = 91A703C11F4D238500BD06AF /* DownView.m */; };
 		91A703C61F4D46B200BD06AF /* TextLayerVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 91A703C51F4D46B200BD06AF /* TextLayerVC.m */; };
@@ -53,6 +56,9 @@
 		9168A8F1217CC44E0078D84E /* ImageExtend.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageExtend.swift; sourceTree = "<group>"; };
 		919BE022211E7DE600F42A0A /* CompleteViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CompleteViewController.h; sourceTree = "<group>"; };
 		919BE023211E7DE600F42A0A /* CompleteViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CompleteViewController.m; sourceTree = "<group>"; };
+		919E73B6217F3843003D5F37 /* PartArcView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PartArcView.swift; sourceTree = "<group>"; };
+		919E73B8217F38C7003D5F37 /* UIColorExtend.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColorExtend.swift; sourceTree = "<group>"; };
+		919E73BA217F3998003D5F37 /* DecimalExtend.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DecimalExtend.swift; sourceTree = "<group>"; };
 		91A703BD1F4C6A8800BD06AF /* ShapeLayerVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ShapeLayerVC.h; sourceTree = "<group>"; };
 		91A703BE1F4C6A8800BD06AF /* ShapeLayerVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ShapeLayerVC.m; sourceTree = "<group>"; };
 		91A703C01F4D238500BD06AF /* DownView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DownView.h; sourceTree = "<group>"; };
@@ -140,6 +146,7 @@
 				91A703C01F4D238500BD06AF /* DownView.h */,
 				91A703C11F4D238500BD06AF /* DownView.m */,
 				91B329332177458F00DD0042 /* ArcView.swift */,
+				919E73B6217F3843003D5F37 /* PartArcView.swift */,
 			);
 			path = ShapeLayer;
 			sourceTree = "<group>";
@@ -181,6 +188,8 @@
 				9141F066217DAA7C00370D8E /* WipeViewController.xib */,
 				9112F47F217C6A0500C50A49 /* ProgressView.swift */,
 				9168A8F1217CC44E0078D84E /* ImageExtend.swift */,
+				919E73B8217F38C7003D5F37 /* UIColorExtend.swift */,
+				919E73BA217F3998003D5F37 /* DecimalExtend.swift */,
 			);
 			path = HollowOut;
 			sourceTree = "<group>";
@@ -393,12 +402,15 @@
 				91C938941F4AC6EA00E9B295 /* DisplayLinkVC.m in Sources */,
 				91428F4D1F4BC5100023561F /* ReplicatorLayerVC.m in Sources */,
 				91F753D71F4B245100D1CA08 /* GradientLayerVC.m in Sources */,
+				919E73B9217F38C7003D5F37 /* UIColorExtend.swift in Sources */,
+				919E73BB217F3998003D5F37 /* DecimalExtend.swift in Sources */,
 				91B329392177607100DD0042 /* HollowOutVC.swift in Sources */,
 				91C9389A1F4AEDC700E9B295 /* EAGLLayerVC.m in Sources */,
 				91A703CA1F4D50DE00BD06AF /* TiledLayerVC.m in Sources */,
 				91C938761F4AB31600E9B295 /* AppDelegate.m in Sources */,
 				91A703C21F4D238500BD06AF /* DownView.m in Sources */,
 				91C938731F4AB31600E9B295 /* main.m in Sources */,
+				919E73B7217F3843003D5F37 /* PartArcView.swift in Sources */,
 				91B329342177458F00DD0042 /* ArcView.swift in Sources */,
 				9112F480217C6A0500C50A49 /* ProgressView.swift in Sources */,
 				91A703C61F4D46B200BD06AF /* TextLayerVC.m in Sources */,
