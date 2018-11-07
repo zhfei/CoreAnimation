@@ -27,8 +27,8 @@ extension UIImage {
         UIGraphicsBeginImageContextWithOptions(rect.size, true, 1)
         image?.draw(in: CGRect(x: 0, y: 0, width: rect.size.width, height: rect.size.height))
         
-        let att = [NSFontAttributeName:UIFont(name: "PingFang SC", size: 15),
-                  NSForegroundColorAttributeName:UIColor.red]
+        let att = [NSAttributedString.Key.font:UIFont(name: "PingFang SC", size: 15),
+                   NSAttributedString.Key.foregroundColor:UIColor.red]
         waterText.draw(at: CGPoint(x: rect.size.width*0.1, y: rect.size.height*0.1), withAttributes: att)
         
         let result = UIGraphicsGetImageFromCurrentImageContext()
@@ -86,10 +86,12 @@ extension UIImage {
         view.layer.render(in: context!)
         
         let resultImage = UIGraphicsGetImageFromCurrentImageContext()
-        let resultData = UIImageJPEGRepresentation(resultImage!, 1)
+        
+        
+        let resultData = resultImage?.jpegData(compressionQuality: 1)
         UIGraphicsEndImageContext()
         
-        completeBlock(resultImage!,resultData! as NSData)
+        completeBlock(resultImage!,resultData as! NSData)
     }
     
     static func zhf_cutScreenWithView(_ view: UIView, cutFrame:CGRect, completeBlock: ((_ image: UIImage, _ imageData: NSData) -> ()))  {
@@ -109,7 +111,7 @@ extension UIImage {
         resultImage?.draw(at: CGPoint(x: -cutFrame.origin.x, y: -cutFrame.origin.y))
         resultImage = UIGraphicsGetImageFromCurrentImageContext()
         
-        let resultData = UIImageJPEGRepresentation(resultImage!, 1)
+        let resultData = resultImage?.jpegData(compressionQuality: 1)
         completeBlock(resultImage!,resultData! as NSData)
     }
     

@@ -22,7 +22,7 @@ class HollowOutVC: UIViewController {
         // Do any additional setup after loading the view.
         
 
-        let rightItem = UIBarButtonItem(barButtonSystemItem: UIBarButtonSystemItem.done, target: self, action: #selector(goToWipe))
+        let rightItem = UIBarButtonItem(barButtonSystemItem: UIBarButtonItem.SystemItem.done, target: self, action: #selector(goToWipe))
         
         self.navigationItem.setRightBarButton(rightItem, animated: true)
         
@@ -32,9 +32,10 @@ class HollowOutVC: UIViewController {
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
 
+        PanView.showInVC()
     }
     
-    func goToWipe() {
+    @objc func goToWipe() {
         self.navigationController?.pushViewController(WipeViewController(), animated: true)
     }
     

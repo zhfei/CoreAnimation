@@ -20,6 +20,7 @@
 		91428F4D1F4BC5100023561F /* ReplicatorLayerVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 91428F4B1F4BC5100023561F /* ReplicatorLayerVC.m */; };
 		91428F4E1F4BC5100023561F /* ReplicatorLayerVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 91428F4C1F4BC5100023561F /* ReplicatorLayerVC.xib */; };
 		91428F521F4C3DC10023561F /* ScrollLayerVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 91428F511F4C3DC10023561F /* ScrollLayerVC.m */; };
+		91437BA521931A0400DC66FB /* PanView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91437BA421931A0400DC66FB /* PanView.swift */; };
 		919BE024211E7DE600F42A0A /* CompleteViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 919BE023211E7DE600F42A0A /* CompleteViewController.m */; };
 		91A703BF1F4C6A8800BD06AF /* ShapeLayerVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 91A703BE1F4C6A8800BD06AF /* ShapeLayerVC.m */; };
 		91A703C21F4D238500BD06AF /* DownView.m in Sources */ = {isa = PBXBuildFile; fileRef = 91A703C11F4D238500BD06AF /* DownView.m */; };
@@ -60,6 +61,7 @@
 		91428F4C1F4BC5100023561F /* ReplicatorLayerVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ReplicatorLayerVC.xib; sourceTree = "<group>"; };
 		91428F501F4C3DC10023561F /* ScrollLayerVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ScrollLayerVC.h; sourceTree = "<group>"; };
 		91428F511F4C3DC10023561F /* ScrollLayerVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ScrollLayerVC.m; sourceTree = "<group>"; };
+		91437BA421931A0400DC66FB /* PanView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PanView.swift; sourceTree = "<group>"; };
 		919BE022211E7DE600F42A0A /* CompleteViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CompleteViewController.h; sourceTree = "<group>"; };
 		919BE023211E7DE600F42A0A /* CompleteViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CompleteViewController.m; sourceTree = "<group>"; };
 		91A703BD1F4C6A8800BD06AF /* ShapeLayerVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ShapeLayerVC.h; sourceTree = "<group>"; };
@@ -119,6 +121,7 @@
 				910A7CD5217F662400689DCF /* PartArcView.swift */,
 				910A7CC9217F656E00689DCF /* ProgressView.swift */,
 				910A7CCA217F656E00689DCF /* BorderView.swift */,
+				91437BA421931A0400DC66FB /* PanView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -415,6 +418,7 @@
 				9141F067217DAA7C00370D8E /* WipeViewController.swift in Sources */,
 				91C938791F4AB31600E9B295 /* ViewController.m in Sources */,
 				91C938901F4ABBC600E9B295 /* BaseViewController.m in Sources */,
+				91437BA521931A0400DC66FB /* PanView.swift in Sources */,
 				910A7CD2217F656E00689DCF /* ImageExtend.swift in Sources */,
 				919BE024211E7DE600F42A0A /* CompleteViewController.m in Sources */,
 				91C9388D1F4ABA0B00E9B295 /* TransitionVC.m in Sources */,
@@ -562,7 +566,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "CoreAnimation//CoreAnimation-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 3.0;
+				SWIFT_VERSION = 4.2;
 			};
 			name = Debug;
 		};
@@ -576,7 +580,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.ChenDao.CoreAnimation;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "CoreAnimation//CoreAnimation-Bridging-Header.h";
-				SWIFT_VERSION = 3.0;
+				SWIFT_VERSION = 4.2;
 			};
 			name = Release;
 		};
