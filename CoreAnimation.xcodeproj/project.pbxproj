@@ -27,6 +27,7 @@
 		91A703C61F4D46B200BD06AF /* TextLayerVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 91A703C51F4D46B200BD06AF /* TextLayerVC.m */; };
 		91A703CA1F4D50DE00BD06AF /* TiledLayerVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 91A703C91F4D50DE00BD06AF /* TiledLayerVC.m */; };
 		91A703CE1F4D6F0300BD06AF /* TransformLayerVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 91A703CD1F4D6F0300BD06AF /* TransformLayerVC.m */; };
+		91ACEA9421A3BE7F00249FA8 /* ProgressBarVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91ACEA9321A3BE7F00249FA8 /* ProgressBarVC.swift */; };
 		91B329392177607100DD0042 /* HollowOutVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91B329372177607100DD0042 /* HollowOutVC.swift */; };
 		91B3293A2177607100DD0042 /* HollowOutVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 91B329382177607100DD0042 /* HollowOutVC.xib */; };
 		91C938731F4AB31600E9B295 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 91C938721F4AB31600E9B295 /* main.m */; };
@@ -43,6 +44,8 @@
 		91F753D21F4B151200D1CA08 /* EmitterLayerVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 91F753D01F4B151200D1CA08 /* EmitterLayerVC.m */; };
 		91F753D31F4B151200D1CA08 /* EmitterLayerVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 91F753D11F4B151200D1CA08 /* EmitterLayerVC.xib */; };
 		91F753D71F4B245100D1CA08 /* GradientLayerVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 91F753D61F4B245100D1CA08 /* GradientLayerVC.m */; };
+		91FA596A21C7A5A600E09EC8 /* LabelProgressBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91FA596921C7A5A600E09EC8 /* LabelProgressBar.swift */; };
+		91FA596C21C7A8F500E09EC8 /* BottomFlagLineButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91FA596B21C7A8F500E09EC8 /* BottomFlagLineButton.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -74,6 +77,7 @@
 		91A703C91F4D50DE00BD06AF /* TiledLayerVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TiledLayerVC.m; sourceTree = "<group>"; };
 		91A703CC1F4D6F0300BD06AF /* TransformLayerVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TransformLayerVC.h; sourceTree = "<group>"; };
 		91A703CD1F4D6F0300BD06AF /* TransformLayerVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TransformLayerVC.m; sourceTree = "<group>"; };
+		91ACEA9321A3BE7F00249FA8 /* ProgressBarVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgressBarVC.swift; sourceTree = "<group>"; };
 		91B32935217745CC00DD0042 /* CoreAnimation-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "CoreAnimation-Bridging-Header.h"; sourceTree = "<group>"; };
 		91B329372177607100DD0042 /* HollowOutVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HollowOutVC.swift; sourceTree = "<group>"; };
 		91B329382177607100DD0042 /* HollowOutVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HollowOutVC.xib; sourceTree = "<group>"; };
@@ -101,6 +105,8 @@
 		91F753D11F4B151200D1CA08 /* EmitterLayerVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = EmitterLayerVC.xib; sourceTree = "<group>"; };
 		91F753D51F4B245100D1CA08 /* GradientLayerVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GradientLayerVC.h; sourceTree = "<group>"; };
 		91F753D61F4B245100D1CA08 /* GradientLayerVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GradientLayerVC.m; sourceTree = "<group>"; };
+		91FA596921C7A5A600E09EC8 /* LabelProgressBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LabelProgressBar.swift; sourceTree = "<group>"; };
+		91FA596B21C7A8F500E09EC8 /* BottomFlagLineButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BottomFlagLineButton.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -122,6 +128,8 @@
 				910A7CC9217F656E00689DCF /* ProgressView.swift */,
 				910A7CCA217F656E00689DCF /* BorderView.swift */,
 				91437BA421931A0400DC66FB /* PanView.swift */,
+				91FA596921C7A5A600E09EC8 /* LabelProgressBar.swift */,
+				91FA596B21C7A8F500E09EC8 /* BottomFlagLineButton.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -202,6 +210,14 @@
 			path = TransformLayer;
 			sourceTree = "<group>";
 		};
+		91ACEA9221A3BE5B00249FA8 /* ProgressBar */ = {
+			isa = PBXGroup;
+			children = (
+				91ACEA9321A3BE7F00249FA8 /* ProgressBarVC.swift */,
+			);
+			path = ProgressBar;
+			sourceTree = "<group>";
+		};
 		91B329362177604200DD0042 /* HollowOut */ = {
 			isa = PBXGroup;
 			children = (
@@ -262,6 +278,7 @@
 		91C938881F4AB39300E9B295 /* Animations */ = {
 			isa = PBXGroup;
 			children = (
+				91ACEA9221A3BE5B00249FA8 /* ProgressBar */,
 				91B329362177604200DD0042 /* HollowOut */,
 				919BE021211E7DE600F42A0A /* Complete */,
 				91A703CB1F4D6EE600BD06AF /* TransformLayer */,
@@ -414,6 +431,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				910A7CD7217F662400689DCF /* PartArcView.swift in Sources */,
+				91ACEA9421A3BE7F00249FA8 /* ProgressBarVC.swift in Sources */,
 				91A703BF1F4C6A8800BD06AF /* ShapeLayerVC.m in Sources */,
 				9141F067217DAA7C00370D8E /* WipeViewController.swift in Sources */,
 				91C938791F4AB31600E9B295 /* ViewController.m in Sources */,
@@ -422,9 +440,11 @@
 				910A7CD2217F656E00689DCF /* ImageExtend.swift in Sources */,
 				919BE024211E7DE600F42A0A /* CompleteViewController.m in Sources */,
 				91C9388D1F4ABA0B00E9B295 /* TransitionVC.m in Sources */,
+				91FA596A21C7A5A600E09EC8 /* LabelProgressBar.swift in Sources */,
 				91F753D21F4B151200D1CA08 /* EmitterLayerVC.m in Sources */,
 				910A7CD1217F656E00689DCF /* DecimalExtend.swift in Sources */,
 				91428F521F4C3DC10023561F /* ScrollLayerVC.m in Sources */,
+				91FA596C21C7A8F500E09EC8 /* BottomFlagLineButton.swift in Sources */,
 				91C938941F4AC6EA00E9B295 /* DisplayLinkVC.m in Sources */,
 				91428F4D1F4BC5100023561F /* ReplicatorLayerVC.m in Sources */,
 				91F753D71F4B245100D1CA08 /* GradientLayerVC.m in Sources */,
