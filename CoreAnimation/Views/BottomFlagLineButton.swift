@@ -25,6 +25,7 @@ class BottomFlagLineButton: UIButton {
 //        self.setTitleColor((bottomLayer?.isHidden)! ? UIColor(hex: "9ea4af") : UIColor(hex: selectColorHex) , for: UIControlState.normal)
     }
 
+
 }
 
 extension UIButton {
