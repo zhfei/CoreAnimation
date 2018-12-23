@@ -22,13 +22,14 @@ class LabelProgressBar: UIView {
         set {
             progressValue_ = newValue
             progressWidth = progressValue_ * width
+            setText(text: self.progressValueStr())
             maskLayer()
         }
     }
     
     lazy var contextLabel: UILabel = {
         let label = UILabel()
-        label.text = "3.96 KB/ 5.57 KB"
+        label.text = " %"
         label.font = UIFont.systemFont(ofSize: 12)
         label.textColor = UIColor.white
         label.textAlignment = NSTextAlignment.center
@@ -38,6 +39,12 @@ class LabelProgressBar: UIView {
     
     func setText(text: String) {
         contextLabel.text = text
+    }
+    
+    func progressValueStr() -> String {
+        let pv = String(format:  "当前进度：%.2f", progressValue_*100)
+        return pv.appending(" %")
+        
     }
     
     func maskLayer() {
@@ -70,7 +77,7 @@ class LabelProgressBar: UIView {
             
             //初始化gradientLayer并设置相关属性
             let gradientLayer = CAGradientLayer()
-            gradientLayer.colors = [UIColor(hex: "7963e6").cgColor, UIColor(hex: "b972d7").cgColor]
+            gradientLayer.colors = [UIColor(hex: "4DABF4").cgColor, UIColor(hex: "9B30C1").cgColor]
             //(I.e. [0,0] is the bottom-left corner of the layer, [1,1] is the top-right corner.)
             gradientLayer.startPoint = CGPoint(x: 0, y: 0)
             gradientLayer.endPoint = CGPoint(x: 1, y: 0)
@@ -86,6 +93,7 @@ class LabelProgressBar: UIView {
             
             self.layer.cornerRadius = height*0.5
             self.layer.masksToBounds = true
+            self.backgroundColor = UIColor.lightGray
             return
         }
     }
