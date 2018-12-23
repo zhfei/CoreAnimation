@@ -3,7 +3,7 @@
 //  CoreAnimation
 //
 //  Created by 周飞 on 2018/12/17.
-//  Copyright © 2018年 ChenDao. All rights reserved.
+//  Copyright © 2018年 ZHF. All rights reserved.
 //
 
 import UIKit
@@ -14,7 +14,7 @@ class LabelProgressBar: UIView {
     var progressWidth: CGFloat = 0.0
     
     private var bottomLayer: CALayer?
-    var progressValue_: CGFloat = 0.7
+    var progressValue_: CGFloat = 0.5
     var progressValue: CGFloat {
         get {
             return progressValue_
@@ -87,6 +87,7 @@ class LabelProgressBar: UIView {
             bottomLayer = gradientLayer
             
             maskLayer()
+            setText(text: self.progressValueStr())
             
             self.addSubview(contextLabel)
             contextLabel.frame = CGRect(x: 0, y: 0, width: width, height: height)

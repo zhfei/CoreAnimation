@@ -3,14 +3,14 @@
 //  CoreAnimation
 //
 //  Created by zhoufei on 2018/10/23.
-//  Copyright © 2018年 ChenDao. All rights reserved.
+//  Copyright © 2018年 ZHF. All rights reserved.
 //
 
 import UIKit
 
 class PartArcView: UIView {
 
-    var _progressValue: CGFloat = 0.6
+    var _progressValue: CGFloat = 0.5
     var progressValue: CGFloat {
         get {
             return _progressValue
@@ -34,7 +34,7 @@ class PartArcView: UIView {
             baseRadius = height
         }
         //圆弧粗
-        let borderWidth: CGFloat = 6.0
+        let borderWidth: CGFloat = 10.0
         //大弧外线半径
         let bigOuterRadius = baseRadius-edgeDistance
         //大弧内线半径
@@ -88,7 +88,10 @@ class PartArcView: UIView {
     
     func drawProgressValueStr(_ rect: CGRect) {
         let pv = NSString(format:  "当前进度：%.2f", (1-_progressValue)*100)
-        pv.appending(" %").draw(in: rect, withAttributes: nil)
+        let size = pv.size(withAttributes: nil)
+        let x = (rect.size.width - size.width)*0.5
+        let y = (rect.size.height - size.height)*0.5
         
+        pv.appending(" %").draw(at: CGPoint(x: x, y: y+20), withAttributes: nil)
     }
 }
