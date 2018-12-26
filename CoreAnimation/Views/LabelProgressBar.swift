@@ -74,8 +74,7 @@ class LabelProgressBar: UIView {
             width = self.frame.size.width
             height = self.frame.size.height
             progressWidth = progressValue_ * width
-            
-            //初始化gradientLayer并设置相关属性
+            //添加渐变色图层gradientLayer
             let gradientLayer = CAGradientLayer()
             gradientLayer.colors = [UIColor(hex: "4DABF4").cgColor, UIColor(hex: "9B30C1").cgColor]
             //(I.e. [0,0] is the bottom-left corner of the layer, [1,1] is the top-right corner.)
@@ -85,13 +84,13 @@ class LabelProgressBar: UIView {
             gradientLayer.bounds = CGRect(origin: CGPoint.zero, size: CGSize(width: width, height: height))
             self.layer.insertSublayer(gradientLayer, at: 0)
             bottomLayer = gradientLayer
-            
-            maskLayer()
-            setText(text: self.progressValueStr())
-            
-            self.addSubview(contextLabel)
+            //添加文字Label
             contextLabel.frame = CGRect(x: 0, y: 0, width: width, height: height)
-            
+            self.addSubview(contextLabel)
+            setText(text: self.progressValueStr())
+            //将贝塞尔曲线图层赋值给渐变色图层的mask属性
+            maskLayer()
+            //背景样式
             self.layer.cornerRadius = height*0.5
             self.layer.masksToBounds = true
             self.backgroundColor = UIColor.lightGray

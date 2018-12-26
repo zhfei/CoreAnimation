@@ -55,19 +55,43 @@
                         <action selector="changeValue:" destination="-1" eventType="valueChanged" id="eSz-O8-Vey"/>
                     </connections>
                 </slider>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="实现方式：CALayer" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GMX-ox-WbC">
+                    <rect key="frame" x="49" y="78" width="277" height="21"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="277" id="enP-fP-NPj"/>
+                        <constraint firstAttribute="height" constant="21" id="uJe-Tx-W0U"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="MalayalamSangamMN" family="Malayalam Sangam MN" pointSize="16"/>
+                    <color key="textColor" red="0.2274509804" green="0.49803921569999998" blue="0.96078431369999995" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="实现方式：CoreGraphics" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CAE-yZ-VCX">
+                    <rect key="frame" x="100.5" y="379" width="174.5" height="21"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="21" id="5gx-ys-62w"/>
+                        <constraint firstAttribute="width" constant="174.5" id="kzQ-vY-ynT"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="MalayalamSangamMN" family="Malayalam Sangam MN" pointSize="16"/>
+                    <color key="textColor" red="0.2274509804" green="0.49803921569999998" blue="0.96078431369999995" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
             </subviews>
             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <constraints>
                 <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="zMq-6u-bI5" secondAttribute="bottom" constant="100" id="7A0-ub-jAO"/>
                 <constraint firstItem="xgc-ba-9L7" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="49" id="7z4-yP-0Ln"/>
+                <constraint firstItem="zMq-6u-bI5" firstAttribute="top" secondItem="CAE-yZ-VCX" secondAttribute="bottom" constant="27" id="CBV-OT-brn"/>
                 <constraint firstItem="OKe-Cw-pxK" firstAttribute="top" secondItem="zMq-6u-bI5" secondAttribute="bottom" constant="27" id="F8i-wk-GdQ"/>
                 <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="OKe-Cw-pxK" secondAttribute="trailing" constant="49" id="Ifp-f4-jlq"/>
                 <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="xgc-ba-9L7" secondAttribute="trailing" constant="49" id="KYr-tP-3lr"/>
                 <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="Xw4-ll-nt0" secondAttribute="trailing" constant="49" id="Rdm-37-gyS"/>
+                <constraint firstItem="GMX-ox-WbC" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="XWg-pA-e5S"/>
                 <constraint firstItem="zMq-6u-bI5" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="XgG-cG-98B"/>
                 <constraint firstItem="OKe-Cw-pxK" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="53" id="aMd-F3-Vf8"/>
+                <constraint firstItem="xgc-ba-9L7" firstAttribute="top" secondItem="GMX-ox-WbC" secondAttribute="bottom" constant="29" id="hyj-tP-qie"/>
                 <constraint firstItem="xgc-ba-9L7" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" constant="108" id="kGp-Dn-sGs"/>
                 <constraint firstItem="Xw4-ll-nt0" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="51" id="sJS-kv-S4K"/>
+                <constraint firstItem="CAE-yZ-VCX" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="txW-4k-tTz"/>
                 <constraint firstItem="Xw4-ll-nt0" firstAttribute="top" secondItem="xgc-ba-9L7" secondAttribute="bottom" constant="23" id="yIB-1I-3CF"/>
             </constraints>
             <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
