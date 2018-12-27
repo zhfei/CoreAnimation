@@ -10,10 +10,6 @@ import UIKit
 
 class HollowOutVC: UIViewController {
 
-    @IBOutlet weak var progressView: PartArcView!
-    @IBAction func sliderAction(_ sender: UISlider) {
-        self.progressView.progressValue = CGFloat(sender.value)
-    }
     
     @IBOutlet weak var bgImageView: UIImageView!
     override func viewDidLoad() {
@@ -22,7 +18,7 @@ class HollowOutVC: UIViewController {
         // Do any additional setup after loading the view.
         
 
-        let rightItem = UIBarButtonItem(barButtonSystemItem: UIBarButtonItem.SystemItem.done, target: self, action: #selector(goToWipe))
+        let rightItem = UIBarButtonItem(title: "进入截图", style: UIBarButtonItem.Style.plain, target: self, action: #selector(goToWipe))
         
         self.navigationItem.setRightBarButton(rightItem, animated: true)
         
@@ -45,9 +41,9 @@ class HollowOutVC: UIViewController {
 //        self.bgImageView.image = UIImage.zhf_clipCircleImage("BigPic2", rect: self.bgImageView.bounds, circleRect: CGRect(x: 100, y: 20, width: 80, height: 80))
 //        self.bgImageView.image = UIImage.zhf_clipCircleImage("BigPic2", rect: self.bgImageView.bounds, circleRect: CGRect(x: 100, y: 20, width: 80, height: 80), borderWidth: 5, borderColor: UIColor.blue)
         
-        UIImage.zhf_cutScreenWithView(self.view) {image,data in
-            self.bgImageView.image = image
-        }
+//        UIImage.zhf_cutScreenWithView(self.view) {image,data in
+//            self.bgImageView.image = image
+//        }
     }
     
 
