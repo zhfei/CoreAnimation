@@ -22,6 +22,9 @@
 		91428F4E1F4BC5100023561F /* ReplicatorLayerVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 91428F4C1F4BC5100023561F /* ReplicatorLayerVC.xib */; };
 		91428F521F4C3DC10023561F /* ScrollLayerVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 91428F511F4C3DC10023561F /* ScrollLayerVC.m */; };
 		91437BA521931A0400DC66FB /* PanView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91437BA421931A0400DC66FB /* PanView.swift */; };
+		914E35D421EEDDE600A90ED5 /* WaterWaveBallViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 914E35D221EEDDE600A90ED5 /* WaterWaveBallViewController.m */; };
+		914E35D521EEDDE600A90ED5 /* WaterWaveBallViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 914E35D321EEDDE600A90ED5 /* WaterWaveBallViewController.xib */; };
+		914E35D821EEDED400A90ED5 /* WaterWaveBall.m in Sources */ = {isa = PBXBuildFile; fileRef = 914E35D721EEDED400A90ED5 /* WaterWaveBall.m */; };
 		919BE024211E7DE600F42A0A /* CompleteViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 919BE023211E7DE600F42A0A /* CompleteViewController.m */; };
 		91A703BF1F4C6A8800BD06AF /* ShapeLayerVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 91A703BE1F4C6A8800BD06AF /* ShapeLayerVC.m */; };
 		91A703C21F4D238500BD06AF /* DownView.m in Sources */ = {isa = PBXBuildFile; fileRef = 91A703C11F4D238500BD06AF /* DownView.m */; };
@@ -67,6 +70,11 @@
 		91428F501F4C3DC10023561F /* ScrollLayerVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ScrollLayerVC.h; sourceTree = "<group>"; };
 		91428F511F4C3DC10023561F /* ScrollLayerVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ScrollLayerVC.m; sourceTree = "<group>"; };
 		91437BA421931A0400DC66FB /* PanView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PanView.swift; sourceTree = "<group>"; };
+		914E35D121EEDDE600A90ED5 /* WaterWaveBallViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WaterWaveBallViewController.h; sourceTree = "<group>"; };
+		914E35D221EEDDE600A90ED5 /* WaterWaveBallViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WaterWaveBallViewController.m; sourceTree = "<group>"; };
+		914E35D321EEDDE600A90ED5 /* WaterWaveBallViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = WaterWaveBallViewController.xib; sourceTree = "<group>"; };
+		914E35D621EEDED400A90ED5 /* WaterWaveBall.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WaterWaveBall.h; sourceTree = "<group>"; };
+		914E35D721EEDED400A90ED5 /* WaterWaveBall.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WaterWaveBall.m; sourceTree = "<group>"; };
 		919BE022211E7DE600F42A0A /* CompleteViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CompleteViewController.h; sourceTree = "<group>"; };
 		919BE023211E7DE600F42A0A /* CompleteViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CompleteViewController.m; sourceTree = "<group>"; };
 		91A703BD1F4C6A8800BD06AF /* ShapeLayerVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ShapeLayerVC.h; sourceTree = "<group>"; };
@@ -163,6 +171,18 @@
 				91428F511F4C3DC10023561F /* ScrollLayerVC.m */,
 			);
 			path = ScrollLayer;
+			sourceTree = "<group>";
+		};
+		914E35D021EEDDB600A90ED5 /* WaterWaveBall */ = {
+			isa = PBXGroup;
+			children = (
+				914E35D121EEDDE600A90ED5 /* WaterWaveBallViewController.h */,
+				914E35D221EEDDE600A90ED5 /* WaterWaveBallViewController.m */,
+				914E35D321EEDDE600A90ED5 /* WaterWaveBallViewController.xib */,
+				914E35D621EEDED400A90ED5 /* WaterWaveBall.h */,
+				914E35D721EEDED400A90ED5 /* WaterWaveBall.m */,
+			);
+			path = WaterWaveBall;
 			sourceTree = "<group>";
 		};
 		919BE021211E7DE600F42A0A /* Complete */ = {
@@ -281,6 +301,7 @@
 		91C938881F4AB39300E9B295 /* Animations */ = {
 			isa = PBXGroup;
 			children = (
+				914E35D021EEDDB600A90ED5 /* WaterWaveBall */,
 				91ACEA9221A3BE5B00249FA8 /* ProgressBar */,
 				91B329362177604200DD0042 /* HollowOut */,
 				919BE021211E7DE600F42A0A /* Complete */,
@@ -418,6 +439,7 @@
 				910FB5F321CE84E400B3A690 /* ProgressBarVC.xib in Resources */,
 				91428F4E1F4BC5100023561F /* ReplicatorLayerVC.xib in Resources */,
 				91C938811F4AB31600E9B295 /* LaunchScreen.storyboard in Resources */,
+				914E35D521EEDDE600A90ED5 /* WaterWaveBallViewController.xib in Resources */,
 				9141F068217DAA7C00370D8E /* WipeViewController.xib in Resources */,
 				91C9387E1F4AB31600E9B295 /* Assets.xcassets in Resources */,
 				910E9C82217B877F0016DD90 /* iOS 绘图结构图.graffle in Resources */,
@@ -453,6 +475,7 @@
 				91428F4D1F4BC5100023561F /* ReplicatorLayerVC.m in Sources */,
 				91F753D71F4B245100D1CA08 /* GradientLayerVC.m in Sources */,
 				91B329392177607100DD0042 /* HollowOutVC.swift in Sources */,
+				914E35D421EEDDE600A90ED5 /* WaterWaveBallViewController.m in Sources */,
 				91C9389A1F4AEDC700E9B295 /* EAGLLayerVC.m in Sources */,
 				910A7CD6217F662400689DCF /* ArcView.swift in Sources */,
 				910A7CD3217F656E00689DCF /* UIColorExtend.swift in Sources */,
@@ -460,6 +483,7 @@
 				910A7CCF217F656E00689DCF /* ProgressView.swift in Sources */,
 				91C938761F4AB31600E9B295 /* AppDelegate.m in Sources */,
 				91A703C21F4D238500BD06AF /* DownView.m in Sources */,
+				914E35D821EEDED400A90ED5 /* WaterWaveBall.m in Sources */,
 				910A7CD0217F656E00689DCF /* BorderView.swift in Sources */,
 				91C938731F4AB31600E9B295 /* main.m in Sources */,
 				91A703C61F4D46B200BD06AF /* TextLayerVC.m in Sources */,
