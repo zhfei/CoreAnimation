@@ -25,6 +25,8 @@
 		914E35D421EEDDE600A90ED5 /* WaterWaveBallViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 914E35D221EEDDE600A90ED5 /* WaterWaveBallViewController.m */; };
 		914E35D521EEDDE600A90ED5 /* WaterWaveBallViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 914E35D321EEDDE600A90ED5 /* WaterWaveBallViewController.xib */; };
 		914E35D821EEDED400A90ED5 /* WaterWaveBall.m in Sources */ = {isa = PBXBuildFile; fileRef = 914E35D721EEDED400A90ED5 /* WaterWaveBall.m */; };
+		9180C18121F6FB97002711FC /* SpringBallViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9180C18021F6FB97002711FC /* SpringBallViewController.m */; };
+		9180C18421F6FBBA002711FC /* SpringBall.m in Sources */ = {isa = PBXBuildFile; fileRef = 9180C18321F6FBBA002711FC /* SpringBall.m */; };
 		919BE024211E7DE600F42A0A /* CompleteViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 919BE023211E7DE600F42A0A /* CompleteViewController.m */; };
 		91A703BF1F4C6A8800BD06AF /* ShapeLayerVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 91A703BE1F4C6A8800BD06AF /* ShapeLayerVC.m */; };
 		91A703C21F4D238500BD06AF /* DownView.m in Sources */ = {isa = PBXBuildFile; fileRef = 91A703C11F4D238500BD06AF /* DownView.m */; };
@@ -75,6 +77,10 @@
 		914E35D321EEDDE600A90ED5 /* WaterWaveBallViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = WaterWaveBallViewController.xib; sourceTree = "<group>"; };
 		914E35D621EEDED400A90ED5 /* WaterWaveBall.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WaterWaveBall.h; sourceTree = "<group>"; };
 		914E35D721EEDED400A90ED5 /* WaterWaveBall.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WaterWaveBall.m; sourceTree = "<group>"; };
+		9180C17F21F6FB97002711FC /* SpringBallViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SpringBallViewController.h; sourceTree = "<group>"; };
+		9180C18021F6FB97002711FC /* SpringBallViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SpringBallViewController.m; sourceTree = "<group>"; };
+		9180C18221F6FBBA002711FC /* SpringBall.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SpringBall.h; sourceTree = "<group>"; };
+		9180C18321F6FBBA002711FC /* SpringBall.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SpringBall.m; sourceTree = "<group>"; };
 		919BE022211E7DE600F42A0A /* CompleteViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CompleteViewController.h; sourceTree = "<group>"; };
 		919BE023211E7DE600F42A0A /* CompleteViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CompleteViewController.m; sourceTree = "<group>"; };
 		91A703BD1F4C6A8800BD06AF /* ShapeLayerVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ShapeLayerVC.h; sourceTree = "<group>"; };
@@ -183,6 +189,17 @@
 				914E35D721EEDED400A90ED5 /* WaterWaveBall.m */,
 			);
 			path = WaterWaveBall;
+			sourceTree = "<group>";
+		};
+		9180C17E21F6FB74002711FC /* SpringBall */ = {
+			isa = PBXGroup;
+			children = (
+				9180C17F21F6FB97002711FC /* SpringBallViewController.h */,
+				9180C18021F6FB97002711FC /* SpringBallViewController.m */,
+				9180C18221F6FBBA002711FC /* SpringBall.h */,
+				9180C18321F6FBBA002711FC /* SpringBall.m */,
+			);
+			path = SpringBall;
 			sourceTree = "<group>";
 		};
 		919BE021211E7DE600F42A0A /* Complete */ = {
@@ -301,6 +318,7 @@
 		91C938881F4AB39300E9B295 /* Animations */ = {
 			isa = PBXGroup;
 			children = (
+				9180C17E21F6FB74002711FC /* SpringBall */,
 				914E35D021EEDDB600A90ED5 /* WaterWaveBall */,
 				91ACEA9221A3BE5B00249FA8 /* ProgressBar */,
 				91B329362177604200DD0042 /* HollowOut */,
@@ -463,6 +481,7 @@
 				91C938791F4AB31600E9B295 /* ViewController.m in Sources */,
 				91C938901F4ABBC600E9B295 /* BaseViewController.m in Sources */,
 				91437BA521931A0400DC66FB /* PanView.swift in Sources */,
+				9180C18421F6FBBA002711FC /* SpringBall.m in Sources */,
 				910A7CD2217F656E00689DCF /* ImageExtend.swift in Sources */,
 				919BE024211E7DE600F42A0A /* CompleteViewController.m in Sources */,
 				91C9388D1F4ABA0B00E9B295 /* TransitionVC.m in Sources */,
@@ -471,6 +490,7 @@
 				910A7CD1217F656E00689DCF /* DecimalExtend.swift in Sources */,
 				91428F521F4C3DC10023561F /* ScrollLayerVC.m in Sources */,
 				91FA596C21C7A8F500E09EC8 /* BottomFlagLineButton.swift in Sources */,
+				9180C18121F6FB97002711FC /* SpringBallViewController.m in Sources */,
 				91C938941F4AC6EA00E9B295 /* DisplayLinkVC.m in Sources */,
 				91428F4D1F4BC5100023561F /* ReplicatorLayerVC.m in Sources */,
 				91F753D71F4B245100D1CA08 /* GradientLayerVC.m in Sources */,
