@@ -16,6 +16,9 @@
 		910A7CD7217F662400689DCF /* PartArcView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 910A7CD5217F662400689DCF /* PartArcView.swift */; };
 		910E9C82217B877F0016DD90 /* iOS 绘图结构图.graffle in Resources */ = {isa = PBXBuildFile; fileRef = 910E9C81217B877F0016DD90 /* iOS 绘图结构图.graffle */; };
 		910FB5F321CE84E400B3A690 /* ProgressBarVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 910FB5F221CE84E400B3A690 /* ProgressBarVC.xib */; };
+		9126FA4D22DCC81E003F2C31 /* PhoneCallViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9126FA4B22DCC81E003F2C31 /* PhoneCallViewController.m */; };
+		9126FA4E22DCC81E003F2C31 /* PhoneCallViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9126FA4C22DCC81E003F2C31 /* PhoneCallViewController.xib */; };
+		9126FA5222DCC84E003F2C31 /* CallingView.m in Sources */ = {isa = PBXBuildFile; fileRef = 9126FA5122DCC84E003F2C31 /* CallingView.m */; };
 		9141F067217DAA7C00370D8E /* WipeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9141F065217DAA7C00370D8E /* WipeViewController.swift */; };
 		9141F068217DAA7C00370D8E /* WipeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9141F066217DAA7C00370D8E /* WipeViewController.xib */; };
 		91428F4D1F4BC5100023561F /* ReplicatorLayerVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 91428F4B1F4BC5100023561F /* ReplicatorLayerVC.m */; };
@@ -64,6 +67,11 @@
 		910A7CD5217F662400689DCF /* PartArcView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PartArcView.swift; sourceTree = "<group>"; };
 		910E9C81217B877F0016DD90 /* iOS 绘图结构图.graffle */ = {isa = PBXFileReference; lastKnownFileType = file; path = "iOS 绘图结构图.graffle"; sourceTree = "<group>"; };
 		910FB5F221CE84E400B3A690 /* ProgressBarVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ProgressBarVC.xib; sourceTree = "<group>"; };
+		9126FA4A22DCC81E003F2C31 /* PhoneCallViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PhoneCallViewController.h; sourceTree = "<group>"; };
+		9126FA4B22DCC81E003F2C31 /* PhoneCallViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PhoneCallViewController.m; sourceTree = "<group>"; };
+		9126FA4C22DCC81E003F2C31 /* PhoneCallViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PhoneCallViewController.xib; sourceTree = "<group>"; };
+		9126FA5022DCC84E003F2C31 /* CallingView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CallingView.h; sourceTree = "<group>"; };
+		9126FA5122DCC84E003F2C31 /* CallingView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CallingView.m; sourceTree = "<group>"; };
 		9141F065217DAA7C00370D8E /* WipeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WipeViewController.swift; sourceTree = "<group>"; };
 		9141F066217DAA7C00370D8E /* WipeViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = WipeViewController.xib; sourceTree = "<group>"; };
 		91428F4A1F4BC5100023561F /* ReplicatorLayerVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ReplicatorLayerVC.h; sourceTree = "<group>"; };
@@ -158,6 +166,26 @@
 				910A7CCE217F656E00689DCF /* UIColorExtend.swift */,
 			);
 			path = Helper;
+			sourceTree = "<group>";
+		};
+		9126FA4922DCC7F8003F2C31 /* 电话拨打中动画 */ = {
+			isa = PBXGroup;
+			children = (
+				9126FA4F22DCC838003F2C31 /* View */,
+				9126FA4A22DCC81E003F2C31 /* PhoneCallViewController.h */,
+				9126FA4B22DCC81E003F2C31 /* PhoneCallViewController.m */,
+				9126FA4C22DCC81E003F2C31 /* PhoneCallViewController.xib */,
+			);
+			path = "电话拨打中动画";
+			sourceTree = "<group>";
+		};
+		9126FA4F22DCC838003F2C31 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				9126FA5022DCC84E003F2C31 /* CallingView.h */,
+				9126FA5122DCC84E003F2C31 /* CallingView.m */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 		91428F491F4BC4F60023561F /* ReplicatorLayer */ = {
@@ -318,6 +346,7 @@
 		91C938881F4AB39300E9B295 /* Animations */ = {
 			isa = PBXGroup;
 			children = (
+				9126FA4922DCC7F8003F2C31 /* 电话拨打中动画 */,
 				9180C17E21F6FB74002711FC /* SpringBall */,
 				914E35D021EEDDB600A90ED5 /* WaterWaveBall */,
 				91ACEA9221A3BE5B00249FA8 /* ProgressBar */,
@@ -454,6 +483,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				91F753D31F4B151200D1CA08 /* EmitterLayerVC.xib in Resources */,
+				9126FA4E22DCC81E003F2C31 /* PhoneCallViewController.xib in Resources */,
 				910FB5F321CE84E400B3A690 /* ProgressBarVC.xib in Resources */,
 				91428F4E1F4BC5100023561F /* ReplicatorLayerVC.xib in Resources */,
 				91C938811F4AB31600E9B295 /* LaunchScreen.storyboard in Resources */,
@@ -479,6 +509,7 @@
 				91A703BF1F4C6A8800BD06AF /* ShapeLayerVC.m in Sources */,
 				9141F067217DAA7C00370D8E /* WipeViewController.swift in Sources */,
 				91C938791F4AB31600E9B295 /* ViewController.m in Sources */,
+				9126FA5222DCC84E003F2C31 /* CallingView.m in Sources */,
 				91C938901F4ABBC600E9B295 /* BaseViewController.m in Sources */,
 				91437BA521931A0400DC66FB /* PanView.swift in Sources */,
 				9180C18421F6FBBA002711FC /* SpringBall.m in Sources */,
@@ -494,6 +525,7 @@
 				91C938941F4AC6EA00E9B295 /* DisplayLinkVC.m in Sources */,
 				91428F4D1F4BC5100023561F /* ReplicatorLayerVC.m in Sources */,
 				91F753D71F4B245100D1CA08 /* GradientLayerVC.m in Sources */,
+				9126FA4D22DCC81E003F2C31 /* PhoneCallViewController.m in Sources */,
 				91B329392177607100DD0042 /* HollowOutVC.swift in Sources */,
 				914E35D421EEDDE600A90ED5 /* WaterWaveBallViewController.m in Sources */,
 				91C9389A1F4AEDC700E9B295 /* EAGLLayerVC.m in Sources */,
