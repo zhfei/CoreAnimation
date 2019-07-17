@@ -11,6 +11,7 @@
 @interface ReplicatorLayerVC ()
 @property (weak, nonatomic) IBOutlet UIView *upView;
 @property (weak, nonatomic) IBOutlet UIView *downView;
+@property (weak, nonatomic) IBOutlet UIView *middleView;
 
 @end
 
@@ -126,7 +127,7 @@
     // 2.创建一个图层对象  单条柱形 (原始层)
     CALayer *layer = [CALayer layer];
     // 2.1.设置layer对象的位置
-    layer.position = CGPointMake(15, self.view.bounds.size.height);
+    layer.position = CGPointMake(15, self.middleView.bounds.size.height);
     // 2.2.设置layer对象的锚点
     layer.anchorPoint = CGPointMake(0, 1);
     // 2.3.设置layer对象的位置大小
@@ -154,7 +155,7 @@
     [replicatorLayer addSublayer:layer];
     
     // 6.将复制层添加到view视图层上
-    [self.view.layer addSublayer:replicatorLayer];
+    [self.middleView.layer addSublayer:replicatorLayer];
 }
 
 

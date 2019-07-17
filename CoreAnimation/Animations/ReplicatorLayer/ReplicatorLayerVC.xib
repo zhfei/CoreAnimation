@@ -1,17 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12118" systemVersion="16B2657" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
     <device id="retina3_5" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12118"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14313.18"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ReplicatorLayerVC">
             <connections>
                 <outlet property="downView" destination="JHU-HL-UZY" id="M1t-Z6-iAu"/>
+                <outlet property="middleView" destination="tPS-fW-AhA" id="lg8-cd-FuB"/>
                 <outlet property="upView" destination="cOK-AH-0yV" id="naj-KF-0KB"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
@@ -22,29 +23,34 @@
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cOK-AH-0yV">
-                    <rect key="frame" x="0.0" y="0.0" width="320" height="236"/>
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="160"/>
                     <color key="backgroundColor" red="0.94117647059999998" green="0.94117647059999998" blue="0.94117647059999998" alpha="1" colorSpace="calibratedRGB"/>
-                    <constraints>
-                        <constraint firstAttribute="height" constant="236" id="o7I-x5-AIO"/>
-                    </constraints>
                 </view>
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="JHU-HL-UZY">
-                    <rect key="frame" x="0.0" y="244" width="320" height="236"/>
+                    <rect key="frame" x="0.0" y="320" width="320" height="160"/>
                     <color key="backgroundColor" red="0.94117647059999998" green="0.94117647059999998" blue="0.94117647059999998" alpha="1" colorSpace="calibratedRGB"/>
-                    <constraints>
-                        <constraint firstAttribute="height" constant="236" id="9wl-OE-qWW"/>
-                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="tPS-fW-AhA">
+                    <rect key="frame" x="0.0" y="160" width="320" height="160"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                 </view>
             </subviews>
             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <constraints>
                 <constraint firstItem="JHU-HL-UZY" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="671-iY-xqe"/>
                 <constraint firstAttribute="trailing" secondItem="JHU-HL-UZY" secondAttribute="trailing" id="DJc-GT-UKb"/>
+                <constraint firstItem="tPS-fW-AhA" firstAttribute="top" secondItem="cOK-AH-0yV" secondAttribute="bottom" id="Irp-eb-ofU"/>
                 <constraint firstItem="cOK-AH-0yV" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="JUN-Fb-U51"/>
+                <constraint firstItem="tPS-fW-AhA" firstAttribute="height" secondItem="cOK-AH-0yV" secondAttribute="height" id="JgH-Te-anC"/>
                 <constraint firstAttribute="trailing" secondItem="cOK-AH-0yV" secondAttribute="trailing" id="N8m-26-xBi"/>
+                <constraint firstItem="JHU-HL-UZY" firstAttribute="height" secondItem="cOK-AH-0yV" secondAttribute="height" id="OIG-8Y-jUS"/>
+                <constraint firstAttribute="trailing" secondItem="tPS-fW-AhA" secondAttribute="trailing" id="Tm8-Ax-ssj"/>
                 <constraint firstItem="cOK-AH-0yV" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="Zfx-Kd-9eq"/>
+                <constraint firstItem="tPS-fW-AhA" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="hHo-ct-p3s"/>
+                <constraint firstItem="JHU-HL-UZY" firstAttribute="top" secondItem="tPS-fW-AhA" secondAttribute="bottom" id="sp8-bv-mvK"/>
                 <constraint firstAttribute="bottom" secondItem="JHU-HL-UZY" secondAttribute="bottom" id="txu-dU-BDd"/>
             </constraints>
+            <point key="canvasLocation" x="138.75" y="155"/>
         </view>
     </objects>
 </document>
