@@ -23,6 +23,7 @@
     
     [self setupUpView];
     [self setupDownView];
+    [self showMusic];
 }
 
 - (void)setupUpView {
@@ -109,7 +110,7 @@
 
 }
 
-- (void)music {
+- (void)showMusic {
     // 1.创建一个复制图层对象，设置复制层的属性
     CAReplicatorLayer *replicatorLayer = [CAReplicatorLayer layer];
     
