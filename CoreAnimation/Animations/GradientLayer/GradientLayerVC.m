@@ -9,8 +9,8 @@
 #import "GradientLayerVC.h"
 
 @interface GradientLayerVC ()
-@property (strong, nonatomic)UIView *upView;
-@property (strong, nonatomic)UIView *downView;
+@property (strong, nonatomic) UIView *upView;
+@property (strong, nonatomic) UIView *downView;
 @end
 
 @implementation GradientLayerVC

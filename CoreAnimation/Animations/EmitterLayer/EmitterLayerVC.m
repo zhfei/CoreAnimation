@@ -9,7 +9,7 @@
 #import "EmitterLayerVC.h"
 
 @interface EmitterLayerVC ()
-@property (strong, nonatomic)CAEmitterLayer *caEmitterLayer;
+@property (strong, nonatomic) CAEmitterLayer *caEmitterLayer;
 @end
 
 @implementation EmitterLayerVC

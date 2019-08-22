@@ -9,8 +9,8 @@
 #import "TextLayerVC.h"
 
 @interface TextLayerVC ()<CAAnimationDelegate>
-@property (strong, nonatomic)CATextLayer *textLayer;
-@property (strong, nonatomic)CAGradientLayer     *gradientLayer;
+@property (strong, nonatomic)CATextLayer     *textLayer;
+@property (strong, nonatomic)CAGradientLayer *gradientLayer;
 
 @end
 
@@ -24,7 +24,6 @@
 }
 
 - (void)setupSubVews {
-    
     CAGradientLayer * gdLayer  =self.gradientLayer;
     [gdLayer setFrame:CGRectMake(0, 0, 320, 50)];
     gdLayer.position = self.view.center;
@@ -57,7 +56,6 @@
 }
 
 - (void)setupGradientLayer {
-
     CAGradientLayer *layer = [CAGradientLayer layer];
     [layer setStartPoint:CGPointMake(0.0, 0.5)];
     [layer setEndPoint:CGPointMake(1.0, 0.5)];

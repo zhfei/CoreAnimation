@@ -77,7 +77,7 @@
     [bezier addLineToPoint:CGPointMake(20, 20)];
     
     
-    CAKeyframeAnimation *basicA = [CAKeyframeAnimation animationWithKeyPath:@"position"];
+    CAKeyframeAnimation *basicA = [CABasicAnimation animationWithKeyPath:@"position"];
     basicA.path=bezier.CGPath;
     basicA.duration = 3;
     
