@@ -12,6 +12,7 @@
 @interface SpringBallViewController ()
 @property (nonatomic, strong) SpringBall *upDownBall;
 @property (nonatomic, strong) SpringBall *bigSmallBall;
+@property (nonatomic, strong) UIView *maskView;
 @end
 
 @implementation SpringBallViewController
@@ -44,6 +45,28 @@
     return _bigSmallBall;
 }
 
+- (UIView *)maskView {
+    if (!_maskView) {
+        _maskView = [[UIView alloc] initWithFrame:CGRectMake(100, CGRectGetMaxY(self.bigSmallBall.frame), 50, 50)];
+        
+        CALayer *layer = [CALayer layer];
+        layer.backgroundColor = [UIColor blueColor].CGColor;
+        layer.bounds = _maskView.bounds;
+        layer.position = CGPointMake(CGRectGetWidth(_maskView.frame)*0.5, CGRectGetHeight(_maskView.frame)*0.5);
+        
+        UIBezierPath *ber = [UIBezierPath bezierPathWithOvalInRect:CGRectInset(layer.bounds, 10, 10)];
+        CAShapeLayer *shape = [CAShapeLayer layer];
+        shape.path = ber.CGPath;
+        shape.fillColor = [UIColor redColor].CGColor;
+        shape.fillRule = kCAFillRuleEvenOdd;
+        
+        layer.mask = shape;
+        
+        [_maskView.layer addSublayer:layer];
+    }
+    return _maskView;
+}
+
 #pragma mark - Event
 
 #pragma mark - Public Method
@@ -59,6 +82,8 @@
     
     self.bigSmallBall.frame = CGRectMake(100, 200, 20, 20);
     [self.view addSubview:self.bigSmallBall];
+    
+    [self.view addSubview:self.maskView];
 }
 
 - (void)resetData {
