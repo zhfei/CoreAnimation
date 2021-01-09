@@ -23,6 +23,7 @@
 #import "WaterWaveBallViewController.h"
 #import "SpringBallViewController.h"
 #import "PhoneCallViewController.h"
+#import <CoreGraphics/CoreGraphics.h>
 
 static NSString *cellID =@"myCell";
 
